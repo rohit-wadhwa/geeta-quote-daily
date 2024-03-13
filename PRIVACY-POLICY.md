@@ -1,37 +1,37 @@
-# Privacy Policy for TripleKey Tabs Navigator Chrome Extension
+# Privacy Policy for Geeta Quote Daily Chrome Extension
 
-Last Updated: 24-Feb-2024
+**Last Updated: 13-March-2024**
 
-Thank you for choosing TripleKey Tabs Navigator ("we", "us", "our"). Protecting your privacy is paramount to us. This Privacy Policy outlines how we handle your information when you use our TripleKey Tabs Navigator Chrome Extension (the "Extension"). We urge you to read this privacy policy thoroughly. If you disagree with any part of this privacy policy, please refrain from using the Extension.
+Thank you for choosing Geeta Quote Daily ("we", "us", "our"). Your privacy is of utmost importance to us. This Privacy Policy outlines our practices regarding information handling when you use the Geeta Quote Daily Chrome Extension (the "Extension"). We encourage you to read this privacy policy carefully. If you disagree with any part of this policy, please discontinue the use of the Extension.
 
 ## Information We Collect
 
-The Extension allows users to assign and use keyboard shortcuts for navigating and managing web tabs efficiently in Chrome. It does not collect, store, or transmit any personal information from its users. The Extension operates locally on your device without requiring user registration or collecting personal identifiers.
+The Extension enriches your new tab with daily inspirational quotes from the Bhagavad Gita, alongside serene visuals and optional soothing background music. It does not collect, store, or transmit any personal information from its users. The Extension operates entirely locally on your device, and no user registration or collection of personal identifiers is involved.
 
 ## How We Use Your Information
 
-Given that our Extension does not gather personal information, we do not utilize such information in any manner.
+Since our Extension does not collect personal information, there is no utilization of such information.
 
 ## Sharing Your Information
 
-We do not share, sell, or disclose any personal information with third parties, as no personal information is collected through our Extension.
+We do not share, sell, or otherwise disclose any personal information to third parties, as we do not collect any personal information through our Extension.
 
 ## Security of Your Information
 
-We are committed to ensuring the protection of user information. Although our Extension does not collect personal information, we strive to maintain the security of any interaction with our Extension and protect it against unauthorized access.
+Protecting user information is a priority for us. Even though our Extension does not collect personal information, we are committed to ensuring the security of our Extension against unauthorized access or use.
 
 ## Your Consent
 
-By using our Extension, you consent to this Privacy Policy.
+By using our Extension, you consent to the terms outlined in this Privacy Policy.
 
 ## Changes to Our Privacy Policy
 
-We reserve the right to modify this privacy policy at any time and for any reason. We will inform you about any changes by updating the "Last Updated" date of this privacy policy. Any changes or modifications will become effective immediately upon posting the updated privacy policy on the Extension's designated site, and you waive the right to receive specific notice of each change or modification.
+We reserve the right to amend this privacy policy at any time for any reason. Any updates will be indicated by revising the "Last Updated" date at the top of this policy. Changes will take effect immediately upon their posting on the Extension's page, and you waive the right to specific notice of each such modification.
 
-We encourage you to review this privacy policy periodically to stay informed of updates. By continuing to use the Extension after such revised privacy policy is posted, you will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in the revised privacy policy.
+We advise you to review this privacy policy periodically to stay informed of any updates. Your continued use of the Extension after the posting of an updated privacy policy constitutes your agreement to be bound by and acceptance of the policy changes.
 
 ## Contact Us
 
-If you have any questions or comments about this privacy policy, please do not hesitate to contact us at:
+Should you have any queries or concerns regarding this privacy policy, we're available to address them at:
 
 rohit.wadhwa52@gmail.com
