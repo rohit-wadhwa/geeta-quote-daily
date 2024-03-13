@@ -30,7 +30,7 @@ For direct installation in Chrome, follow these steps for a manual setup:
 
 ## Support
 
-Found Geeta Quote Daily inspiring or useful? Consider [supporting further development](https://www.buymeacoffee.com/creatorname).
+Found Geeta Quote Daily inspiring or useful? Consider [supporting further development](https://www.buymeacoffee.com/rohit.wadhwa).
 
 ## Contributing
 
