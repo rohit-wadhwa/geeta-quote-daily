@@ -159,3 +159,23 @@ body, html {
 #music-toggle:hover {
     background-color: #45a049;
 }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent; /* or any color you prefer */
+  color: white; /* or any color that matches your design */
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Additional styling for links and paragraphs within the footer if needed */
+footer a {
+  color: #add8e6; /* example color for links */
+}
+
+footer p {
+  margin: 5px 0;
+}
