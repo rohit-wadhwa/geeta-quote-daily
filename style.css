@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/background.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#quote {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#reload {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reload:hover {
+    background-color: #0056b3;
+}
+
+#date-time {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #quote, #date-time {
+        font-size: 20px;
+    }
+}
+
+#made-possible-with {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#made-possible-with span {
+    font-weight: bold;
+}
+
+
+#date-time {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    margin-top: 10px;
+    font-size: 18px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#quote {
+    opacity: 0; /* Initial state for animation */
+    transition: opacity 2s ease-in-out;
+    text-shadow: rgb(57 88 55) 3px 3px 0px
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.mayur-pankh {
+    width: 100px; /* Adjust based on your image's size */
+    opacity: 0.7; /* Make it slightly transparent */
+    animation: float 6s ease-in-out infinite;
+    z-index: -1; /* Ensure it stays behind the quote */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); } /* Adjust for larger or more subtle movement */
+}
+
+#music-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#music-toggle:hover {
+    background-color: #45a049;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+#saavn-link {
+    display: block; /* Make the link take its own line */
+    margin-top: 10px; /* Space above the link */
+    color: #1ED760; /* Saavn brand color */
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center; /* Center the link */
+}
+
+#saavn-link:hover {
+    text-decoration: underline;
+}
+
+#music-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#music-toggle:hover {
+    background-color: #45a049;
+}
