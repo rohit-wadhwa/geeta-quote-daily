@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeta Quote Daily</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="date-time"></div>
+    <img src="images/mayur-pankh.png" alt="Peacock Feather" class="mayur-pankh">
+    <div id="quote">Loading...</div>
+    <div class="music-controls">
+        <div class="button-group">
+            <button id="reload">⟳ Reload</button>
+            <button id="music-toggle">🔊 Play Music</button>
+        </div>
+        <a href="https://www.jiosaavn.com/album/mahabharat-krishna-theme-unplugged-version/XNhL0PS1ZtA_" target="_blank" id="saavn-link" title="Mahabharat (Krishna Theme) [Unplugged Version]">Listen on Saavn</a>
+    </div>
+</div>
+
+<audio id="background-music" loop>
+    <source src="https://aac.saavncdn.com/100/098c92cfdc25fa1373be9f572b72ea90_320.mp4" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<a href="https://bhagavadgitaapi.in/" id="made-possible-with">Made possible with <span>Bhagvad Gita API</span>.</a>
+<script src="newtab.js"></script>
+</body>
+</html>
