@@ -25,7 +25,9 @@ For direct installation in Chrome, follow these steps for a manual setup:
 
 ### Install it from source
 
-1. Clone or download the ZIP from the GitHub repository.
+To install TripleKey Tabs Navigator from source:
+
+1. Download the zip file from [GitHub](https://github.com/rohit-wadhwa/geeta-quote-daily/archive/master.zip) or from the [release page](https://github.com/rohit-wadhwa/geeta-quote-daily/releases).
 2. Extract the ZIP file to a folder on your computer.
 3. Open Chrome and navigate to `chrome://extensions`.
 4. Enable "Developer mode" by toggling the switch in the top-right corner.
