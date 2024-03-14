@@ -13,6 +13,9 @@ Geeta Quote Daily is a Chrome extension that offers daily inspirational quotes f
 
 [![Incognito Tab Mover](https://img.youtube.com/vi/1nxUlW9Slcs/0.jpg)](https://www.youtube.com/watch?v=1nxUlW9Slcs)
 
+## Installation
+[![Chrome Web Store installation link](images/image.png)](https://chromewebstore.google.com/detail/geeta-quote-daily/mchnncpedilhkilmpcmoaokgmlglkfab)
+
 ## User Use Case
 
 This extension is perfect for individuals looking to incorporate a moment of reflection and inspiration into their daily routine. Whether starting the day with a positive thought or taking a midday break to refocus and recharge, Geeta Quote Daily provides valuable insights and a peaceful break from the hustle and bustle.
