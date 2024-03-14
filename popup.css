@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+h1 {
+    font-size: 1.4em;
+}
+
+.content {
+    text-align: center;
+}
+
+.support, .more-extensions {
+    margin-top: 20px;
+}
+
+.support img {
+    height: 40px; /* Adjust based on your preference */
+}
+
+.more-extensions a {
+    display: inline-block;
+    background-color: #40DCA5; /* Match Buy me a coffee button or choose a different color */
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Cookie', cursive; /* Optional: Match Buy me a coffee font */
+}
+
+.instructions {
+    background-color: #fff; /* Change as per your color theme */
+    border: 1px solid #ddd; /* Light border for some definition */
+    border-radius: 8px; /* Soften the edges */
+    padding: 20px; /* Spacing inside the instructions box */
+    margin: 10px 0; /* Spacing outside, to separate from other elements */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text and button */
+}
+
+.instructions p {
+    color: #333; /* Dark color for text for better readability */
+    font-size: 14px; /* Adjust based on your preference */
+    margin: 0 0 20px; /* Spacing below the paragraph */
+}
+
