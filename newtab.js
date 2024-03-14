@@ -44,23 +44,29 @@ function fetchQuote() {
 }
 
 // Reload quote
-document.getElementById('reload').addEventListener('click', function() {
+document.getElementById('reload').addEventListener('click', function () {
     // const quoteElement = document.getElementById('quote');
     // quoteElement.innerHTML =`Loading...`;
-        fetchQuote();
-        updateDateTime();
+    fetchQuote();
+    updateDateTime();
+    changeBackground();
 });
 
 // Update date and time
 // Generate and update date-time with animation
 function updateDateTime() {
     const now = new Date();
-    const dateString = now.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const dateString = now.toLocaleDateString(undefined, {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
     const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', second: '2-digit'});
 
     // Update date
     const dateTimeContainer = document.getElementById('date-time');
-    dateTimeContainer.innerHTML = `<div>${dateString}</div><div class="time">${timeString}</div>`;
+    dateTimeContainer.innerHTML = `<div class="date">${dateString}</div><div class="time">${timeString}</div>`;
 }
 
 // Initialize
@@ -69,7 +75,7 @@ updateDateTime();
 // Update the date and time every minute
 setInterval(updateDateTime, 1000);
 
-document.getElementById('music-toggle').addEventListener('click', function() {
+document.getElementById('music-toggle').addEventListener('click', function () {
     const music = document.getElementById('background-music');
     if (music.paused) {
         music.play();
@@ -80,4 +86,26 @@ document.getElementById('music-toggle').addEventListener('click', function() {
     }
 });
 
+function changeBackground() {
+    // Array of background images
+    const backgrounds = [
+        'images/bg1.jpg',
+        'images/bg2.jpg',
+        'images/bg3.jpg',
+        'images/bg4.jpg'
+    ];
+
+    // Select a random background
+    const selectedBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+    // Set the background style
+    document.body.style.backgroundImage = `url('${selectedBackground}')`;
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+}
+
 // Initialize the page with your existing functions
+document.addEventListener("DOMContentLoaded", function () {
+    changeBackground();
+});
