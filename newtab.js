@@ -30,9 +30,9 @@ function fetchQuote() {
             quoteElement.style.opacity = 0; // Prepare for animation
             setTimeout(() => {
                 quoteElement.style.opacity = 1; // Start animation
+                reloadButton.disabled = false;
+                reloadButton.textContent = '⟳ Reload';
             }, 1200); // Short delay to ensure the opacity change triggers animation
-            reloadButton.disabled = false;
-            reloadButton.textContent = '⟳ Reload';
         })
         .catch(error => {
             console.error('Error fetching the quote:', error);
