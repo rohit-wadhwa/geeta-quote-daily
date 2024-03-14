@@ -38,6 +38,8 @@ To install TripleKey Tabs Navigator from source:
 
 Found Geeta Quote Daily inspiring or useful? Consider [supporting further development](https://www.buymeacoffee.com/rohit.wadhwa).
 
+<a href="https://www.buymeacoffee.com/rohit.wadhwa"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=rohit.wadhwa&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
