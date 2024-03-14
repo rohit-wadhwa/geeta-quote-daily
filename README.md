@@ -72,5 +72,7 @@ We are also grateful to [Pt. Prashant Tripathi](https://github.com/ptprashanttri
 - Icons and images created and used under license.
 - Background music sourced from Saavn, with a direct link for user convenience.
 
+[![Github Hits](https://hits.sh/github.com/rohit-wadhwa/geeta-quote-daily.svg)](https://github.com/rohit-wadhwa/geeta-quote-daily/)
+
 Project Link: [https://github.com/rohit-wadhwa/geeta-quote-daily](https://github.com/rohit-wadhwa/geeta-quote-daily)
 
