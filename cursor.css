@@ -1,0 +1,62 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a693; /* Teal green to represent the base of the feather */
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 1000; /* To ensure it's above other content */
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid #0047ab; /* Deep blue to represent the vibrant color of a peacock feather */
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.7); /* Mimicking the gentle movement of a feather */
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4); /* Smaller scale for a subtle effect */
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3); /* Mimic the feather floating away */
+        border-color: #008080; /* A mix of green and blue for the mid-animation color */
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0; /* Fade out like a feather drifting out of sight */
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid #00a693; /* Again, the teal green for consistency */
+}
