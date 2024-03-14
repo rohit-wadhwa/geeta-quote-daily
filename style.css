@@ -6,7 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('images/background.webp') center/cover no-repeat;
+    background: url('images/background.png') center/cover no-repeat;
 }
 
 .container {
@@ -39,6 +39,30 @@ body, html {
     align-items: center;
     z-index: 20; /* To ensure it's above the quote */
 }
+
+.time, .date {
+    font-weight: 600;
+    color: #000;
+    /* Adjusted gradient to include green */
+    background: radial-gradient(
+            circle at 100%,
+            #b2a8fd, /* Light Blue */ #4CAF50 25%, /* Krishna Green */ #8678f9 50%, /* Blue */ #c7d2fe 75%, /* Light Purple */ #9a8dfd 100% /* Dark Purple */
+    );
+    background-size: 200% auto;
+    /* Clip the background to the text and make the text color transparent */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Animate the background position to give the gradient a moving effect */
+    animation: animatedTextGradient 2s linear infinite;
+}
+
+@keyframes animatedTextGradient {
+    to {
+        background-position: 200% center;
+    }
+}
+
 
 .mayur-pankh {
     width: 100px;
@@ -164,14 +188,23 @@ body, html {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
+
 footer {
     position: fixed;
     left: 0;
@@ -182,14 +215,13 @@ footer {
     text-align: left;
     padding: 10px;
     box-sizing: border-box;
-  }
-  
-  /* Additional styling for links and paragraphs within the footer if needed */
-  footer a {
+}
+
+/* Additional styling for links and paragraphs within the footer if needed */
+footer a {
     color: #add8e6; /* example color for links */
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 5px 0;
-  }
-  
+}
