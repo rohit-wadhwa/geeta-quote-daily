@@ -8,6 +8,10 @@ Geeta Quote Daily is a Chrome extension that offers daily inspirational quotes f
 - **Daily Inspiration**: Enjoy a new, thought-provoking quote from the Bhagavad Gita each day.
 - **Beautiful Imagery**: Each quote is accompanied by serene visuals, including peacock feathers and other symbolic references, to enhance the reading experience.
 - **Background Music**: Users can listen to soothing Krishna flute music while reading the quote, adding to the ambiance.
+  
+## Demo 
+
+[![Incognito Tab Mover](https://img.youtube.com/vi/1nxUlW9Slcs/0.jpg)](https://www.youtube.com/watch?v=1nxUlW9Slcs)
 
 ## User Use Case
 
