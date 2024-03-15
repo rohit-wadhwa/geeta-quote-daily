@@ -26,7 +26,7 @@ function fetchQuote() {
         .then(data => {
             quoteElement.innerHTML = `
       <p>${data.slok}</p>
-      <p>${data.tej.ht}</p>`;
+      <p>${data.tej.ht}</p><p class="author">Author: ${data.tej.author}</p>`;
             quoteElement.style.opacity = 0; // Prepare for animation
             setTimeout(() => {
                 quoteElement.style.opacity = 1; // Start animation
@@ -86,6 +86,15 @@ document.getElementById('music-toggle').addEventListener('click', function () {
     }
 });
 
+function preloadImages(urls) {
+    const images = [];
+    for (const url of urls) {
+        const img = new Image();
+        img.src = url;
+        images.push(img);
+    }
+}
+
 function changeBackground() {
     // Array of background images
     const backgrounds = [
@@ -95,6 +104,9 @@ function changeBackground() {
         'images/bg4.jpg',
         'images/background.png'
     ];
+
+    // Preload images
+    preloadImages(backgrounds);
 
     // Select a random background
     const selectedBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
@@ -107,6 +119,6 @@ function changeBackground() {
 }
 
 // Initialize the page with your existing functions
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     changeBackground();
 });
