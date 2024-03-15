@@ -21,6 +21,8 @@ Experience Geeta Quote Daily live: [https://geeta-quote-daily.vercel.app/](https
 ## Installation
 [![Chrome Web Store installation link](images/image.png)](https://chromewebstore.google.com/detail/geeta-quote-daily/mchnncpedilhkilmpcmoaokgmlglkfab)
 
+Chrome Web Store installation link: https://chromewebstore.google.com/detail/geeta-quote-daily/mchnncpedilhkilmpcmoaokgmlglkfab
+
 ## User Use Case
 
 This extension is perfect for individuals looking to incorporate a moment of reflection and inspiration into their daily routine. Whether starting the day with a positive thought or taking a midday break to refocus and recharge, Geeta Quote Daily provides valuable insights and a peaceful break from the hustle and bustle.
