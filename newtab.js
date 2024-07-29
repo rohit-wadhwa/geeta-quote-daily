@@ -21,7 +21,7 @@ function fetchQuote() {
     reloadButton.textContent = 'Loading...';
     const chapter = getRandomChapter();
     const verse = getRandomVerse(chapter);
-    fetch(`https://bhagavadgitaapi.in/slok/${chapter}/${verse}/`)
+    fetch(`https://vedicscriptures.github.io/slok/${chapter}/${verse}/`)
         .then(response => response.json())
         .then(data => {
             quoteElement.innerHTML = `
