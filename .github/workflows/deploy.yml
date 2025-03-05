@@ -1,0 +1,8 @@
+uses: Klemensas/chrome-extension-upload-action@$VERSION
+with:
+  refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
+  client-id: ${{ secrets.CHROME_CLIENT_ID }}
+  client-secret: ${{ secrets.CHROME_EXTENSION_SECRET }}
+  file-name: './extension.zip'
+  app-id: ${{ secrets.CHROME_APP_ID }}
+  publish: true
