@@ -7,6 +7,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background: url('images/background.png') center/cover no-repeat;
+    transition: background-image 1s ease-in-out;
 }
 
 .container {
@@ -17,6 +18,7 @@ body, html {
     padding: 20px;
     border-radius: 10px;
     position: relative;
+    z-index: 2;
 }
 
 #quote {
@@ -71,45 +73,135 @@ body, html {
     z-index: -1;
 }
 
-#reload, #music-toggle {
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin-top: 20px;
+}
+
+.button-group button {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #reload {
-    background-color: #007bff; /* Blue base color for the reload button */
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Soft shadow for depth */
+    background-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
 }
 
 #reload:hover, #reload:focus {
-    background-color: #0056b3; /* Darker blue on hover for contrast */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 8px rgba(0, 123, 255, 0.5); /* More pronounced shadow on hover */
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 123, 255, 0.5);
 }
 
 #music-toggle {
-    background-color: #4CAF50; /* Green base color for the music toggle button */
-    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3); /* Soft shadow for depth */
+    background-color: #4CAF50;
+    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);
 }
 
 #music-toggle:hover, #music-toggle:focus {
-    background-color: #45a049; /* Darker green on hover for contrast */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 8px rgba(76, 175, 80, 0.5); /* More pronounced shadow on hover */
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(76, 175, 80, 0.5);
 }
 
+#language-toggle {
+    background-color: #FF9800;
+    box-shadow: 0 4px 6px rgba(255, 152, 0, 0.3);
+}
 
-.button-group {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+#language-toggle:hover, #language-toggle:focus {
+    background-color: #F57C00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(255, 152, 0, 0.5);
+}
+
+#magic-rain {
+    background-color: #9C27B0;
+    box-shadow: 0 4px 6px rgba(156, 39, 176, 0.3);
+}
+
+#magic-rain:hover, #magic-rain:focus {
+    background-color: #7B1FA2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(156, 39, 176, 0.5);
+}
+
+/* Magical Rain Effect Styles */
+.magic-rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.05) 50%,
+        transparent
+    );
+    animation: container-glow 4s ease-in-out infinite;
+}
+
+@keyframes container-glow {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.02);
+    }
+}
+
+.magic-drop {
+    position: absolute;
+    background: radial-gradient(circle at center, 
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.8) 30%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 100%
+    );
+    border-radius: 50%;
+    animation: magic-rain-fall linear infinite;
+    box-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 15px rgba(255, 255, 255, 0.3);
+    transition: opacity 0.5s ease-out;
+}
+
+@keyframes magic-rain-fall {
+    0% {
+        transform: translateY(-100vh) translateX(var(--start-x, 0));
+        opacity: 0;
+    }
+    5% {
+        opacity: var(--drop-opacity, 0.6);
+    }
+    95% {
+        opacity: var(--drop-opacity, 0.6);
+    }
+    100% {
+        transform: translateY(100vh) translateX(var(--end-x, 0));
+        opacity: 0;
+    }
+}
+
+/* Ensure buttons are disabled properly */
+.button-group button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 #saavn-link {
@@ -227,4 +319,109 @@ footer p {
 }
 .author {
     margin: 0;
+}
+
+.verse-reference {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.loading-quote {
+    opacity: 0.8;
+    text-align: center;
+    padding: 20px;
+    animation: pulse 2s infinite;
+}
+
+.loading-quote p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.loading-quote .author {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.quote-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.quote-content p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.quote-content .author {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.error-quote {
+    text-align: center;
+    padding: 20px;
+    color: #ff4444;
+    font-size: 1.2em;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.magic-rain-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rain-sound-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(156, 39, 176, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.rain-sound-toggle:hover {
+    background-color: rgba(156, 39, 176, 0.5);
+}
+
+.rain-sound-toggle input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.rain-sound-toggle span {
+    user-select: none;
+}
+
+@media (max-width: 767px) {
+    .magic-rain-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rain-sound-toggle {
+        margin-top: 5px;
+    }
 }
