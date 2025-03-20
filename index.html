@@ -2,57 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Geeta Quote Daily - Daily Wisdom from the Bhagavad Gita</title>
     <meta content="Geeta Quote Daily enriches your day with inspirational quotes from the Bhagavad Gita, set against serene visuals and accompanied by the soothing sounds of Krishna's flute. A moment of peace and reflection with every new tab."
           name="description">
     <meta content="Rohit Wadhwa" name="author">
     <meta content="https://in.linkedin.com/in/rohit-wadhwa" name="author-url">
+    <meta content="Bhagavad Gita, Daily Quotes, Spiritual Wisdom, Chrome Extension" name="keywords">
+    <meta content="https://vedicscriptures.github.io/" name="api-source">
+    <meta content="https://www.buymeacoffee.com/rohit.wadhwa" name="support">
+    
+    <!-- Favicon -->
     <link href="images/favicon.ico" rel="icon">
-    <link href="images/icon128.png" rel="icon" sizes="128x128"
-          type="image/png"/>
-    <link href="images/icon64.png" rel="icon" sizes="64x64"
-          type="image/png"/>
-    <link href="images/icon16.png" rel="icon" sizes="16x16"
-          type="image/png"/>
+    <link href="images/icon128.png" rel="icon" sizes="128x128" type="image/png"/>
+    <link href="images/icon64.png" rel="icon" sizes="64x64" type="image/png"/>
+    <link href="images/icon16.png" rel="icon" sizes="16x16" type="image/png"/>
+    
+    <!-- Stylesheets -->
     <link href="style.css" rel="stylesheet">
     <link href="cursor.css" rel="stylesheet">
+    
+    <!-- Copyright notice -->
+    <meta content="© 2024 Geeta Quote Daily. All rights reserved." name="copyright">
 </head>
 <body>
 <div class="container">
     <div id="date-time"></div>
     <img alt="Peacock Feather" class="mayur-pankh" src="images/mayur-pankh.png">
     <div id="quote">Loading...</div>
-    <div class="music-controls">
+    
+    <div class="controls-container">
         <div class="button-group">
             <button id="reload">⟳ Reload</button>
             <button id="music-toggle">🔊 Play Music</button>
             <button id="language-toggle">🔄 English</button>
-            <div class="magic-rain-controls">
-                <button id="magic-rain">✨ Magic Rain</button>
-                <label class="rain-sound-toggle">
-                    <input type="checkbox" id="rain-sound">
-                    <span>🌧️ Rain Sound</span>
-                </label>
-            </div>
+            <button id="chapter-info">📖 Chapters</button>
         </div>
-        <a href="https://www.jiosaavn.com/album/mahabharat-krishna-theme-unplugged-version/XNhL0PS1ZtA_" id="saavn-link"
-           target="_blank" title="Mahabharat (Krishna Theme) [Unplugged Version]">Listen on Saavn</a>
+        <div class="magic-rain-controls">
+            <button id="magic-rain">✨ Magic Rain</button>
+            <label class="rain-sound-toggle">
+                <input type="checkbox" id="rain-sound">
+                <span>🌧️ Rain Sound</span>
+            </label>
+        </div>
+        <a href="https://www.jiosaavn.com/album/mahabharat-krishna-theme-unplugged-version/XNhL0PS1ZtA_" 
+           class="saavn-link" 
+           target="_blank" 
+           rel="noopener noreferrer">Listen on Saavn</a>
     </div>
 </div>
 
-<audio id="background-music" loop>
-    <source src="https://aac.saavncdn.com/100/098c92cfdc25fa1373be9f572b72ea90_320.mp4" type="audio/mp3">
+<!-- Offline indicator -->
+<div id="offline-indicator" class="offline-indicator">
+    <span class="icon">🌐</span>
+    <span>You are offline</span>
+</div>
+
+<audio id="background-music" loop preload="none" loading="lazy">
+    <source src="https://aac.saavncdn.com/100/098c92cfdc25fa1373be9f572b72ea90_320.mp4" type="audio/mp4">
     Your browser does not support the audio element.
 </audio>
-<a href="https://vedicscriptures.github.io/" id="made-possible-with">Made possible with <span>Bhagvad Gita API</span>.</a>
+
+<a href="https://vedicscriptures.github.io/" 
+   id="made-possible-with"
+   target="_blank"
+   rel="noopener noreferrer">
+    Made possible with <span>Bhagvad Gita API</span>
+</a>
+
 <div class="buy-me-coffee">
-    <a href="https://www.buymeacoffee.com/rohit.wadhwa" target="_blank">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=rohit.wadhwa&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"/>
+    <a href="https://www.buymeacoffee.com/rohit.wadhwa" 
+       target="_blank"
+       rel="noopener noreferrer">
+        <img alt="Buy me a coffee" 
+             src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=rohit.wadhwa&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"/>
     </a>
 </div>
+
 <div class="cursor"></div>
+
+<!-- Chrome Extension promotion button -->
+<div id="extension-promo">
+    <a href="https://chromewebstore.google.com/detail/geeta-quote-daily/mchnncpedilhkilmpcmoaokgmlglkfab" 
+       class="extension-button" 
+       target="_blank"
+       rel="noopener noreferrer">
+        <img src="images/chrome-icon.png" alt="Chrome" width="24" height="24">
+        <span>Get Chrome Extension</span>
+        <span class="free-tag">It's Free</span>
+        <span class="close-promo" title="Hide this"></span>
+    </a>
+</div>
+
+<!-- Scripts -->
+<script src="magicRain.js"></script>
 <script src="newtab.js"></script>
 <script src="cursor.js"></script>
+<script src="promoHandler.js"></script>
+
+<!-- Copyright notice -->
+<footer>
+    <p>© 2024 Geeta Quote Daily. All rights reserved.</p>
+</footer>
 </body>
 </html>
