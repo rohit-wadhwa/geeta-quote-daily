@@ -1,0 +1,40 @@
+{
+  "api": {
+    "baseUrl": "https://vedicscriptures.github.io/slok",
+    "chaptersUrl": "https://vedicscriptures.github.io/chapters",
+    "chapterUrl": "https://vedicscriptures.github.io/chapter"
+  },
+  "content": {
+    "defaultLanguage": "hindi",
+    "totalChapters": 18,
+    "maxVersesPerChapter": [47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 35, 27, 20, 24, 28, 78]
+  },
+  "cache": {
+    "key": "geetaQuoteDailyCache",
+    "expiry": 604800000,
+    "maxCachedQuotes": 50
+  },
+  "backgrounds": {
+    "images": [
+      "images/bg1.jpg",
+      "images/bg2.jpg",
+      "images/bg3.jpg",
+      "images/bg4.jpg",
+      "images/bg5.jpg",
+      "images/bg6.jpg",
+      "images/background.png"
+    ]
+  },
+  "animation": {
+    "duration": 500
+  },
+  "dateTime": {
+    "timeUpdateInterval": 1000,
+    "dateUpdateInterval": 60000
+  },
+  "performance": {
+    "maxMagicDrops": 100,
+    "maxSparkles": 20,
+    "cleanupInterval": 60000
+  }
+} 

@@ -2,6 +2,93 @@
 
 All notable changes to the Geeta Quote Daily Chrome Extension will be documented in this file.
 
+## [2.0.3] - 2024-03-20
+
+### 🔒 Security & Compliance Improvements
+
+- **Chrome Extension Compliance**: Updated codebase to ensure full compliance with Chrome Web Store guidelines
+  - Updated Content Security Policy to allow inline styles for cursor functionality
+  - Fixed cursor.js to work properly within Chrome extension CSP requirements
+  - Fixed cursor movement by properly implementing CSS variables for positioning
+  - Fixed extension promo button visibility when viewed as a website
+  - Fixed close button functionality on extension promo to properly hide the element
+  - Improved website/extension context detection and interface adaptation
+
+- **Code Optimizations**:
+  - Extracted promo handling code to separate module
+  - Improved element state management with consistent class-based styling
+  - Enhanced CSS organization with better utility classes
+  - Optimized localStorage usage for user preferences
+
+- **Performance Enhancements**:
+  - Fixed memory leaks in animation handling
+  - Improved resource cleanup for visual elements
+  - Reduced duplicate code for common operations
+
+### 🐛 Bug Fixes
+
+- Fixed extension promo button visibility issues
+- Improved extension context detection reliability
+- Fixed cursor positioning with CSP-compliant approach
+- Ensured proper state persistence for user preferences
+- Fixed cursor bouncing issue by reverting to direct style attribute approach
+
+## [2.0.2] - 2024-05-17
+
+### 🚀 Performance Improvements
+
+- **Memory Optimization**: Reduced memory footprint and improved performance
+  - Optimized animation handling to pause when tab is not visible
+  - Added cleanup mechanisms for magic rain and sparkle elements
+  - Implemented separate update intervals for date and time displays
+  - Limited maximum number of visual elements to prevent memory leaks
+
+- **Audio Playback Enhancement**:
+  - Continued audio playback when tab is not in focus
+  - Improved rain sound toggle behavior for better user experience
+  - Optimized volume control interaction
+
+- **Visual Enhancements**:
+  - Improved visibility of magic rain effect
+  - Enhanced rain drop appearance with varied colors and sizes
+  - Unified styling of rain controls for better visual consistency
+  - Added transition effects for smoother UI interactions
+
+### 🐛 Bug Fixes
+
+- Fixed issues with rain sound playback when toggling controls
+- Resolved styling inconsistencies in the rain control elements
+- Improved state management for visual effects
+
+## [2.0.1] - 2024-03-19
+
+### ✨ New Features
+
+- **Rain Sound Volume Control**: Added a sleek volume slider for rain sounds
+  - Elegant pill-shaped design that matches the UI
+  - Appears only when rain sound is enabled
+  - Responsive sizing for different screen sizes
+  - Smooth fade-in animation
+
+### 🔧 Improvements
+
+- **Enhanced Caching**: Optimized chapter data caching
+  - Reduced unnecessary API calls
+  - Implemented 7-day cache for chapter information
+  - Added intelligent refresh strategy for popup data
+  - Improved error handling with multiple fallback options
+
+- **UI Enhancements**:
+  - Refined control styling for better visual harmony
+  - Improved responsive layout for mobile devices
+  - More consistent animation effects
+
+### 🐛 Bug Fixes
+
+- Fixed volume slider overflow issues on smaller screens
+- Resolved audio playback inconsistencies on some browsers
+- Improved error handling for API connection failures
+
 ## [2.0.0] - 2024-03-18
 
 ### ✨ New Features
@@ -74,7 +161,6 @@ All notable changes to the Geeta Quote Daily Chrome Extension will be documented
 ### 🔗 External Integrations
 
 - Integration with Bhagvad Gita API
-- JioSaavn music integration
 - Buy Me a Coffee support link
 - LinkedIn profile connection
 
@@ -95,11 +181,18 @@ All notable changes to the Geeta Quote Daily Chrome Extension will be documented
 
 ## Feedback
 
-Please report any issues or suggest features on our [GitHub repository](https://github.com/yourusername/geeta-quote-daily) or contact the developer directly on [LinkedIn](https://in.linkedin.com/in/rohit-wadhwa).
+Please report any issues or suggest features on our [GitHub repository](https://github.com/rohit-wadhwa/geeta-quote-daily) or contact the developer directly on [LinkedIn](https://in.linkedin.com/in/rohit-wadhwa).
 
 ## Credits
 
 - Developer: Rohit Wadhwa
 - API: Bhagvad Gita API
-- Music: JioSaavn
-- Images: Original Krishna-themed artwork 
+- Images: Original Krishna-themed artwork
+
+## Updated [2.0.3] - 2024-03-20
+#### Security & Compliance Improvements
+- Updated Content Security Policy to allow inline styles for cursor functionality
+- Fixed cursor.js to work properly within Chrome extension CSP requirements 
+- Fixed cursor movement by properly implementing CSS variables for positioning
+- Fixed extension promo button visibility when viewed as a website
+- Fixed close button functionality on extension promo to properly hide the element 
