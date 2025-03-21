@@ -1,0 +1,18 @@
+# Data Safety for Geeta Quote Daily Extension
+
+## How we handle your data
+
+Geeta Quote Daily respects your privacy completely. Our extension:
+
+- Does not collect any personal data
+- Stores preferences only on your device
+- Never transmits any user data to external servers
+- Uses permissions only for essential functionality
+
+## Permissions we request
+
+- **Storage**: Saves your preferences locally (like language choice and sound settings)
+- **Alarms**: Schedules daily quote refreshes at midnight
+- **Host permissions**: Accesses only specific domains to fetch quotes, music, and sounds
+
+All data stays on your device, and we have no access to it. The extension works fully offline once content is cached.

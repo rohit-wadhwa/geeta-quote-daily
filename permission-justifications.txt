@@ -1,0 +1,32 @@
+# Permission Justifications for Geeta Quote Daily Extension
+
+## Storage Permission
+
+The 'storage' permission is used to:
+1. Save user preferences locally (language selection, music on/off, rain effect status)
+2. Cache quote data for offline use and reduced API calls
+3. Remember user's last viewed background and settings between sessions
+4. Store timestamp of last quote refresh to maintain daily quote schedule
+
+We do not use storage to collect any personal information. All data is stored locally on the user's device and is not transmitted to any servers or third parties.
+
+## Alarms Permission
+
+The 'alarms' permission is used to:
+1. Schedule daily quote refreshes at midnight
+2. Ensure timely updates of inspirational content
+3. Manage resource cleanup intervals for optimal performance
+4. Control timing of background image rotation
+
+Alarms are set entirely locally and do not involve any data collection or transmission. They only serve to ensure fresh content is delivered regularly without requiring manual refreshes.
+
+## Host Permissions
+
+The host permissions to specific domains are used for:
+
+1. **vedicscriptures.github.io**: Access the Bhagavad Gita API to fetch quotes and chapter information
+2. **saavncdn.com**: Stream Krishna flute background music from JioSaavn's content delivery network
+3. **assets.mixkit.co**: Access rain sound effects for the magic rain feature
+4. **img.buymeacoffee.com**: Display the "Buy Me a Coffee" support button image
+
+These permissions are used solely to fetch content that enhances the user experience. No user data is collected or sent to these domains. The extension only makes GET requests to retrieve the necessary audio, images, and quote data.
