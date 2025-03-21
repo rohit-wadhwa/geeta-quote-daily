@@ -1224,11 +1224,6 @@ footer.visible {
     visibility: hidden !important;
 }
 
-/* Magic Drop States */
-.magic-drop.fade-out {
-    opacity: 0 !important;
-}
-
 /* Volume Control States */
 .volume-control-visible {
     visibility: visible !important;
