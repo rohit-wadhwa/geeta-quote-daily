@@ -23,16 +23,6 @@ Experience Geeta Quote Daily live: [https://geeta-quote-daily.vercel.app/](https
 
 Chrome Web Store installation link: https://chromewebstore.google.com/detail/geeta-quote-daily/mchnncpedilhkilmpcmoaokgmlglkfab
 
-## User Use Case
-
-This extension is perfect for individuals looking to incorporate a moment of reflection and inspiration into their daily routine. Whether starting the day with a positive thought or taking a midday break to refocus and recharge, Geeta Quote Daily provides valuable insights and a peaceful break from the hustle and bustle.
-
-## Installation
-
-Coming soon to the Chrome Web Store.
-
-For direct installation in Chrome, follow these steps for a manual setup:
-
 ### Install it from source
 
 To install TripleKey Tabs Navigator from source:
@@ -43,6 +33,10 @@ To install TripleKey Tabs Navigator from source:
 4. Enable "Developer mode" by toggling the switch in the top-right corner.
 5. Click on "Load Unpacked" and select the extracted folder.
 6. The extension should now be installed locally and ready to inspire.
+
+## User Use Case
+
+This extension is perfect for individuals looking to incorporate a moment of reflection and inspiration into their daily routine. Whether starting the day with a positive thought or taking a midday break to refocus and recharge, Geeta Quote Daily provides valuable insights and a peaceful break from the hustle and bustle.
 
 ## Support
 
