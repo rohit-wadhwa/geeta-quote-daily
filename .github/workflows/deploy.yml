@@ -25,6 +25,7 @@ jobs:
             -x "*.md" \
             -x "*.iml" \
             -x ".vercelignore" \
+            -x "vercel.json" \
             -x "LICENSE"
 
       - name: Upload to Chrome Web Store
