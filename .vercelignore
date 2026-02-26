@@ -1,0 +1,21 @@
+# Demo assets (screenshots and video for GitHub documentation only)
+demo/
+
+# Documentation and metadata (not needed for the website)
+*.md
+LICENSE
+
+# IDE and editor files
+*.iml
+.vscode/
+.idea/
+
+# Chrome extension files (not needed for website)
+background.js
+manifest.json
+popup.html
+popup.css
+
+# Git and CI/CD
+.github/
+.git/
