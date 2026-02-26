@@ -2,13 +2,8 @@
 demo/
 
 # Documentation and metadata (not needed for the website)
-AGENTS.md
-CHANGELOG.md
-TODO.md
-SUPPORT.md
-PRIVACY-POLICY.md
+*.md
 LICENSE
-README.md
 
 # IDE and editor files
 *.iml
