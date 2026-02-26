@@ -8,7 +8,12 @@ Geeta Quote Daily is a Chrome extension that offers daily inspirational quotes f
 - **Daily Inspiration**: Enjoy a new, thought-provoking quote from the Bhagavad Gita each day.
 - **Beautiful Imagery**: Each quote is accompanied by serene visuals, including peacock feathers and other symbolic references, to enhance the reading experience.
 - **Background Music**: Users can listen to soothing Krishna flute music while reading the quote, adding to the ambiance.
-  
+- **Bilingual Support**: Toggle between Hindi and English translations with a single click.
+- **Chapter Browser**: Explore all 18 chapters of the Bhagavad Gita with detailed descriptions and verse counts.
+- **Magic Rain Effect**: Activate a beautiful sparkle rain animation overlay for a meditative atmosphere.
+- **Online/Offline Status**: Automatically detects network status and shows cached quotes when offline with a visual indicator.
+- **Rain Sound**: Enable ambient rain sound with adjustable volume for a relaxing experience.
+
 ## Demo
 
 Click on the image below to watch the demo of Geeta Quote Daily:
@@ -16,6 +21,32 @@ Click on the image below to watch the demo of Geeta Quote Daily:
 [![Geeta Quote Daily](https://img.youtube.com/vi/1nxUlW9Slcs/0.jpg)](https://www.youtube.com/watch?v=1nxUlW9Slcs)
 
 Experience Geeta Quote Daily live: [https://geeta-quote-daily.vercel.app/](https://geeta-quote-daily.vercel.app/)
+
+### Feature Screenshots
+
+**Main View — Daily Quote in Hindi**
+
+![Main View](demo/main-view-hindi.webp)
+
+**English Translation Toggle**
+
+![English Translation](demo/english-translation.webp)
+
+**Chapter Browser — Explore All 18 Chapters**
+
+![Chapters Panel](demo/chapters-panel.webp)
+
+**Offline Status Indicator**
+
+![Offline Status](demo/offline-status.webp)
+
+**Magic Rain Effect**
+
+![Magic Rain](demo/magic-rain-effect.webp)
+
+**New Quote on Reload**
+
+![Reload Quote](demo/reload-new-quote.webp)
 
 
 ## Installation
