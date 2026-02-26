@@ -1,75 +1,91 @@
-# Geeta Quote Daily TODO List
+# Geeta Quote Daily — Roadmap & TODO
 
-This document tracks planned features and improvements for the Geeta Quote Daily Chrome extension.
+## v2.1 — Performance, Images & Core Features
 
-## In Progress: CSP Compliance Project
+### Performance
+- [ ] Convert all background images to WebP format (#7)
+  - bg1-bg6.jpg → WebP (target: max 200KB each)
+  - Replace `background.png` (5.3MB) with `background.webp` (309KB)
+  - Update `config.json` references
+- [ ] Lazy-load non-critical resources (#8)
+  - Preload only the first random background
+  - Use `requestIdleCallback` for magic rain / sparkle setup
+  - Defer audio init until user interaction
+  - Inline critical CSS
+- [ ] Complete CSP compliance — remove `unsafe-inline` (#9)
+  - Convert newtab.js inline styles to CSS classes
+  - Convert magicRain.js inline styles to CSS classes
+  - Remove `'unsafe-inline'` from manifest.json
 
-For version 2.0.4, we need to gradually replace all inline styles with CSS classes to fully comply with CSP without requiring 'unsafe-inline'.
+### Images
+- [ ] Add 10+ new high-quality background images (#10)
+  - Krishna & Arjuna chariot (Kurukshetra)
+  - Peaceful meditation scenes
+  - Temples and sacred places
+  - Cosmic/divine form (Vishwaroop)
+  - Sunrise/sunset landscapes
+  - Radha-Krishna devotional art
+  - All WebP, max 200KB, 1920x1080
+  - Sources: VividImg.com, NoMoreCopyright.com, Easy-Peasy.AI, custom AI generation
 
-### Current Status
-- [x] Fixed cursor.js with CSP-compliant approach (2.0.3)
-- [x] Added extension promo handling with proper classes (2.0.3)
-- [x] Created utility CSS classes for common style operations (2.0.3)
-- [ ] Convert newtab.js inline styles to classes
-- [ ] Convert magicRain.js inline styles to classes
-- [ ] Enable strict CSP without unsafe-inline
+### Features
+- [ ] Share quotes to WhatsApp, Twitter/X, Instagram (#11)
+- [ ] Bookmark / Favorite verses (#12)
+- [ ] Settings panel with gear icon (#13)
+  - Date/time format (12/24h, seconds, AM/PM)
+  - Default language preference
+  - Background image category preference
 
-### How to Approach This
-1. For each component, identify all inline styles
-2. Create corresponding CSS classes in style.css
-3. Replace style assignments with classList.add/remove operations
-4. Test each component after conversion
-5. Finally, remove 'unsafe-inline' from manifest.json
+---
 
-## Upcoming Features
+## v2.2 — Languages, Audio & Engagement
 
-### Social Sharing Implementation
+- [ ] Multi-language support — 6+ languages (#14)
+  - Sanskrit, Gujarati, Telugu, Tamil, Bengali, Marathi
+  - Replace simple toggle with language dropdown
+- [ ] Audio verse recitation (#15)
+- [ ] Dark/Light theme toggle (#16)
+- [ ] Daily streak counter (#17)
+- [ ] Daily notification reminder (#18)
 
-- [ ] Reimplement social sharing functionality with proper CSP compliance
-  - [ ] Replace inline styles with CSS classes and stylesheets
-  - [ ] Move all dynamic styling to JavaScript using classList and predefined CSS classes
-  - [ ] Create proper state management for social sharing UI
-  - [ ] Implement non-inline SVG icons for social platforms
+---
 
-### UI/UX Improvements
+## v3.0 — Advanced Features
 
-- [ ] Enhance mobile responsiveness for all controls
-- [ ] Improve accessibility of interactive elements
-- [ ] Add dark/light theme toggle
-- [ ] Add settings gear icon in top right corner
-  - [ ] Create popup settings panel with show/hide options
-  - [ ] Implement date/time display customization:
-    - [ ] Toggle date/time visibility
-    - [ ] Option to show/hide seconds
-    - [ ] Toggle between 12/24-hour clock format
-    - [ ] Option to show/hide AM/PM indicator
-  - [ ] Save user preferences to localStorage
-  - [ ] Apply settings changes instantly without page reload
+- [ ] Search by chapter and verse (#19)
+- [ ] Reading progress tracker (#20)
+- [ ] Custom background upload (#21)
 
-### Performance Optimizations
+---
 
-- [ ] Further reduce initial load time
-- [ ] Optimize image and audio resources
-- [ ] Implement lazy loading for non-critical components
+## Growth & Store Optimization (#22)
 
-## Documentation
+- [ ] More screenshots in Chrome Web Store listing
+- [ ] Upload demo video to YouTube
+- [ ] Optimize listing keywords
+- [ ] Localize listing to Hindi
+- [ ] Subtle "Rate us" prompt after 7 days
+- [ ] Better promotional images
 
-- [ ] Create comprehensive documentation for the codebase
-- [ ] Add detailed comments for complex functions
-- [ ] Document the extension's architecture and design decisions
+---
 
-## Testing
+## Completed
 
-- [ ] Implement automated tests for core functionality
-- [ ] Test across different Chrome versions
-- [ ] Conduct performance testing on various devices
-
-## Completed in 2.0.3
+### v2.0.3
 - [x] Fixed promo handler to properly show/hide extension promo
 - [x] Added reset utility function for testing promo visibility
 - [x] Updated manifest version to 2.0.3
 - [x] Fixed cursor.js to comply with CSP requirements
 - [x] Added utility classes for future CSP compliance work
-- [x] Updated newsletter and Chrome store description 
+- [x] Updated newsletter and Chrome store description
 - [x] Fixed cursor movement by properly implementing CSS variables
-- [x] Fixed cursor bouncing issue by reverting to direct style attribute approach 
+- [x] Fixed cursor bouncing issue by reverting to direct style attribute approach
+
+### Development Setup
+- [x] Added demo screenshots and video to repo
+- [x] Updated README with feature gallery
+- [x] Added `.vercelignore` for lean Vercel deployments
+- [x] Updated `deploy.yml` to exclude non-extension files from Chrome zip
+- [x] Configured Vercel to deploy only on `main` branch (free plan)
+- [x] Added `vercel.json` for static site config
+- [x] Added `AGENTS.md` with deployment architecture docs
