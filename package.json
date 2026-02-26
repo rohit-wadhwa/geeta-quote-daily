@@ -1,0 +1,26 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "![Geeta Quote Daily](images/banner.png)",
+  "main": "background.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "serve": "python3 -m http.server 8080",
+    "test": "echo \"No automated tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit-wadhwa/geeta-quote-daily.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit-wadhwa/geeta-quote-daily/issues"
+  },
+  "homepage": "https://github.com/rohit-wadhwa/geeta-quote-daily#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2"
+  }
+}
