@@ -16,6 +16,15 @@
   - Convert newtab.js inline styles to CSS classes
   - Convert magicRain.js inline styles to CSS classes
   - Remove `'unsafe-inline'` from manifest.json
+  - **Approach:** For each component: identify inline styles → create CSS classes in style.css → replace `style.x = y` with `classList.add/remove` → test → finally remove `unsafe-inline`
+
+### API Reliability
+- [ ] Reduce dependency on third-party Bhagavad Gita API (#27)
+  - Bundle local JSON with ~50-100 popular verses as offline fallback
+  - Increase quote cache expiry from 24h to 7 days
+  - Add API health check on startup — silently fall back to cached/bundled data
+  - **Medium-term:** Mirror API data in own GitHub Pages as backup
+  - **Long-term:** Self-host all 700 verses, remove runtime API dependency
 
 ### Images
 - [ ] Add 10+ new high-quality background images (#10)
@@ -30,11 +39,17 @@
 
 ### Features
 - [ ] Share quotes to WhatsApp, Twitter/X, Instagram (#11)
+  - Social sharing must use CSP-compliant implementation (no inline styles)
+  - Use classList and predefined CSS classes for dynamic styling
+  - Implement non-inline SVG icons for social platforms
 - [ ] Bookmark / Favorite verses (#12)
 - [ ] Settings panel with gear icon (#13)
   - Date/time format (12/24h, seconds, AM/PM)
   - Default language preference
   - Background image category preference
+- [ ] Enhance mobile responsiveness and accessibility (#24)
+  - All controls touch-friendly (min 44px tap targets)
+  - ARIA labels and keyboard navigation
 
 ---
 
@@ -47,6 +62,8 @@
 - [ ] Dark/Light theme toggle (#16)
 - [ ] Daily streak counter (#17)
 - [ ] Daily notification reminder (#18)
+- [ ] Documentation — codebase, architecture, comments (#25)
+- [ ] Automated tests and cross-browser testing (#26)
 
 ---
 
