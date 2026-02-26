@@ -16,9 +16,6 @@ manifest.json
 popup.html
 popup.css
 
-# Newsletters
-newsletters/
-
 # Git and CI/CD
 .github/
 .git/
