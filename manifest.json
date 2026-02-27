@@ -40,7 +40,8 @@
     "resources": [
       "images/*",
       "*.css",
-      "*.js"
+      "*.js",
+      "fallback-verses.json"
     ],
     "matches": ["<all_urls>"]
   }],
