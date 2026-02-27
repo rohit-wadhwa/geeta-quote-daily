@@ -1,5 +1,6 @@
 // Global configuration
 let CONFIG = {};
+let FALLBACK_VERSES = [];
 
 // State management
 const state = {
@@ -107,6 +108,19 @@ function initializeElements() {
     }
 }
 
+// Load fallback verses for offline/API-down scenarios
+async function loadFallbackVerses() {
+    try {
+        const response = await fetch('fallback-verses.json');
+        if (response.ok) {
+            FALLBACK_VERSES = await response.json();
+            console.log(`Loaded ${FALLBACK_VERSES.length} fallback verses`);
+        }
+    } catch (error) {
+        console.warn('Could not load fallback verses:', error);
+    }
+}
+
 // Load configuration from config.json
 async function loadConfiguration() {
     try {
@@ -142,12 +156,12 @@ async function loadConfiguration() {
             },
             backgrounds: {
                 images: [
-                    'images/bg1.jpg',
-                    'images/bg2.jpg',
-                    'images/bg3.jpg',
-                    'images/bg4.jpg',
-                    'images/bg5.jpg',
-                    'images/bg6.jpg'
+                    'images/bg1.webp',
+                    'images/bg2.webp',
+                    'images/bg3.webp',
+                    'images/bg4.webp',
+                    'images/bg5.webp',
+                    'images/bg6.webp'
                 ]
             },
             animation: {
@@ -638,10 +652,17 @@ const quoteManager = {
             // Check if we have any cached verses at all
             const hasCachedVerses = !!cache.getRandomCachedVerse();
             
-            // If offline and no cache, show specific message
+            // If offline and no cache, try fallback verses
             if (!isOnline && !hasCachedVerses) {
-                console.error('Offline and no cached verses available');
-                ui.displayError('offline');
+                if (FALLBACK_VERSES.length > 0) {
+                    console.log('Offline, using fallback verses');
+                    const fallback = FALLBACK_VERSES[Math.floor(Math.random() * FALLBACK_VERSES.length)];
+                    state.currentQuoteData = fallback;
+                    ui.displayQuote(fallback);
+                } else {
+                    console.error('Offline and no cached or fallback verses available');
+                    ui.displayError('offline');
+                }
                 return;
             }
             
@@ -696,8 +717,14 @@ const quoteManager = {
                                 state.currentQuoteData = cachedQuote;
                                 ui.displayQuote(cachedQuote);
                             }
+                        } else if (FALLBACK_VERSES.length > 0) {
+                            // No cache but have fallback verses
+                            console.log('API failed, using fallback verses');
+                            const fallback = FALLBACK_VERSES[Math.floor(Math.random() * FALLBACK_VERSES.length)];
+                            state.currentQuoteData = fallback;
+                            ui.displayQuote(fallback);
                         } else {
-                            // No cached verses and API failed
+                            // No cached verses, no fallback, and API failed
                             ui.displayError('api');
                         }
                     }
@@ -1328,6 +1355,7 @@ const performance = {
 async function initialize() {
     // Load configuration first
     await loadConfiguration();
+    await loadFallbackVerses();
     
     initializeElements();
     cache.initialize();
