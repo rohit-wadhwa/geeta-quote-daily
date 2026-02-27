@@ -8,7 +8,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('images/background.png') center/cover no-repeat fixed;
+    background: url('images/background.webp') center/cover no-repeat fixed;
     transition: background-image 1s ease-in-out;
     overflow: hidden;
     position: fixed;
