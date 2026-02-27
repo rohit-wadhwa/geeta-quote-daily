@@ -7,7 +7,26 @@
   "content": {
     "defaultLanguage": "hindi",
     "totalChapters": 18,
-    "maxVersesPerChapter": [47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 35, 27, 20, 24, 28, 78]
+    "maxVersesPerChapter": [
+      47,
+      72,
+      43,
+      42,
+      29,
+      47,
+      30,
+      28,
+      34,
+      42,
+      55,
+      20,
+      35,
+      27,
+      20,
+      24,
+      28,
+      78
+    ]
   },
   "cache": {
     "key": "geetaQuoteDailyCache",
@@ -16,13 +35,13 @@
   },
   "backgrounds": {
     "images": [
-      "images/bg1.jpg",
-      "images/bg2.jpg",
-      "images/bg3.jpg",
-      "images/bg4.jpg",
-      "images/bg5.jpg",
-      "images/bg6.jpg",
-      "images/background.png"
+      "images/bg1.webp",
+      "images/bg2.webp",
+      "images/bg3.webp",
+      "images/bg4.webp",
+      "images/bg5.webp",
+      "images/bg6.webp",
+      "images/background.webp"
     ]
   },
   "animation": {
@@ -37,4 +56,4 @@
     "maxSparkles": 20,
     "cleanupInterval": 60000
   }
-} 
+}
