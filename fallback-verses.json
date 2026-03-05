@@ -1,25 +1,48 @@
 [
   {
-    "_id": "BG2.47",
-    "chapter": 2,
-    "verse": 47,
-    "slok": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन |\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ||२-४७||",
-    "transliteration": "karmaṇyevādhikāraste mā phaleṣu kadācana .\nmā karmaphalaheturbhūrmā te saṅgo.astvakarmaṇi ||2-47||",
+    "_id": "BG1.1",
+    "chapter": 1,
+    "verse": 1,
+    "slok": "धृतराष्ट्र उवाच |\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ||१-१||",
+    "transliteration": "dhṛtarāṣṭra uvāca .\ndharmakṣetre kurukṣetre samavetā yuyutsavaḥ .\nmāmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||1-1||",
     "tej": {
-      "ht": "।।2.47।। कर्म करने मात्र में तुम्हारा अधिकार है? फल में कभी नहीं। तुम कर्मफल के हेतु वाले मत होना और अकर्म में भी तुम्हारी आसक्ति न हो।।",
+      "ht": "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?",
       "author": "Swami Tejomayananda"
     },
+    "rams": {
+      "ht": "।।1.1।। धृतराष्ट्र बोले (टिप्पणी प0 1.2) - हे संजय! (टिप्पणी प0 1.3) धर्मभूमि कुरुक्षेत्र में युद्ध की इच्छा से इकट्ठे हुए मेरेे और पाण्डु के पुत्रों ने भी क्या किया?",
+      "author": "Swami Ramsukhdas"
+    },
     "siva": {
-      "et": "2.47 Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive, nor let thy attachment be to inaction.",
+      "et": "1.1 Dhritarashtra said  What did my people and the sons of Pandu do when they had assembled\ntogether eager for battle on the holy plain of Kurukshetra, O Sanjaya.",
       "author": "Swami Sivananda"
     },
     "purohit": {
-      "et": "2.47 But thou hast only the right to work, but none to the fruit thereof. Let not then the fruit of thy action be thy motive; nor yet be thou enamored of inaction.",
+      "et": "1.1 The King Dhritarashtra asked: \"O Sanjaya! What happened on the sacred battlefield of Kurukshetra, when my people gathered against the Pandavas?\"",
       "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG1.47",
+    "chapter": 1,
+    "verse": 47,
+    "slok": "सञ्जय उवाच |\nएवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् |\nविसृज्य सशरं चापं शोकसंविग्नमानसः ||१-४७||",
+    "transliteration": "sañjaya uvāca .\nevamuktvārjunaḥ saṅkhye rathopastha upāviśat .\nvisṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ ||1-47||",
+    "tej": {
+      "ht": "।।1.47।।संजय ने कहा  --  रणभूमि (संख्ये) में शोक से उद्विग्न मनवाला अर्जुन इस प्रकार कहकर बाणसहित धनुष को त्याग कर रथ के पिछले भाग में बैठ गया।",
+      "author": "Swami Tejomayananda"
     },
     "rams": {
-      "ht": "।।2.47।। कर्तव्य-कर्म करनेमें ही तेरा अधिकार है, फलोंमें कभी नहीं। अतः तू कर्मफलका हेतु भी मत बन और तेरी अकर्मण्यतामें भी आसक्ति न हो।",
+      "ht": "।।1.47।। संजय बोले - ऐसा कहकर शोकाकुल मनवाले अर्जुन बाणसहित धनुष का त्याग करके युद्धभूमि में रथके मध्यभाग में बैठ गये।",
       "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "1.47. Sanjaya said  Having thus spoken in the midst of the battlefield, Arjuna,\ncasting away his bow and arrow, sat down on the seat of the chariot with\nhis mind overwhelmed with sorrow.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "1.47 Sanjaya said: \"Having spoken thus, in the midst of the armies, Arjuna sank on the seat of the chariot, casting away his bow and arrow; heartbroken with grief.\"",
+      "author": "Shri Purohit Swami"
     }
   },
   {
@@ -65,6 +88,29 @@
     },
     "rams": {
       "ht": "।।2.20।। यह शरीरी न कभी जन्मता है और न मरता है तथा यह उत्पन्न होकर फिर होनेवाला नहीं है। यह जन्मरहित, नित्य-निरन्तर रहनेवाला, शाश्वत और पुराण (अनादि) है। शरीरके मारे जानेपर भी यह नहीं मारा जाता।",
+      "author": "Swami Ramsukhdas"
+    }
+  },
+  {
+    "_id": "BG2.47",
+    "chapter": 2,
+    "verse": 47,
+    "slok": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन |\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ||२-४७||",
+    "transliteration": "karmaṇyevādhikāraste mā phaleṣu kadācana .\nmā karmaphalaheturbhūrmā te saṅgo.astvakarmaṇi ||2-47||",
+    "tej": {
+      "ht": "।।2.47।। कर्म करने मात्र में तुम्हारा अधिकार है? फल में कभी नहीं। तुम कर्मफल के हेतु वाले मत होना और अकर्म में भी तुम्हारी आसक्ति न हो।।",
+      "author": "Swami Tejomayananda"
+    },
+    "siva": {
+      "et": "2.47 Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive, nor let thy attachment be to inaction.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "2.47 But thou hast only the right to work, but none to the fruit thereof. Let not then the fruit of thy action be thy motive; nor yet be thou enamored of inaction.",
+      "author": "Shri Purohit Swami"
+    },
+    "rams": {
+      "ht": "।।2.47।। कर्तव्य-कर्म करनेमें ही तेरा अधिकार है, फलोंमें कभी नहीं। अतः तू कर्मफलका हेतु भी मत बन और तेरी अकर्मण्यतामें भी आसक्ति न हो।",
       "author": "Swami Ramsukhdas"
     }
   },
@@ -161,6 +207,52 @@
     }
   },
   {
+    "_id": "BG5.10",
+    "chapter": 5,
+    "verse": 10,
+    "slok": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः |\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा ||५-१०||",
+    "transliteration": "brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ .\nlipyate na sa pāpena padmapatramivāmbhasā ||5-10||",
+    "tej": {
+      "ht": "।।5.10।। जो पुरुष सब कर्म ब्रह्म में अर्पण करके और आसक्ति को त्यागकर करता है,  वह पुरुष कमल के पत्ते के सदृश पाप से लिप्त नहीं होता।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।5.10।। जो (भक्तियोगी) सम्पूर्ण कर्मोंको भगवान् में अर्पण करके और आसक्तिका त्याग करके कर्म करता है, वह जलसे कमलके पत्तेकी तरह पापसे लिप्त नहीं होता।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "5.10 He who does actions, offering them to Brahman, and abandoning attachment, is not tainted by sin, just as a lotus-leaf is not tainted by water.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "5.10 He who dedicates his actions to the Spirit, without any personal attachment to them, he is no more tainted by sin than the water lily is wetted by water.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG5.18",
+    "chapter": 5,
+    "verse": 18,
+    "slok": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः ||५-१८||",
+    "transliteration": "vidyāvinayasampanne brāhmaṇe gavi hastini .\nśuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||5-18||",
+    "tej": {
+      "ht": "।।5.18।। (ऐसे वे) ज्ञानीजन विद्या और विनय से सम्पन्न ब्राह्मण,  तथा गाय,  हाथी,  श्वान और चाण्डाल में भी सम तत्त्व को देखते हैं।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।5.18।। ज्ञानी महापुरुष विद्या-विनययुक्त ब्राह्मणमें और चाण्डालमें तथा गाय, हाथी एवं कुत्तेमें भी समरूप परमात्माको देखनेवाले होते हैं।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "5.18 Sages look with an eal eye on a Brahmana endowed with learning and humility, on a cow, on an elephant, and even on a dog and an outcaste.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "5.18 Sages look equally upon all, whether he be a minister of learning and humility, or an infidel, or whether it be a cow, an elephant or a dog.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
     "_id": "BG6.5",
     "chapter": 6,
     "verse": 5,
@@ -184,6 +276,98 @@
     }
   },
   {
+    "_id": "BG7.7",
+    "chapter": 7,
+    "verse": 7,
+    "slok": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय |\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ||७-७||",
+    "transliteration": "mattaḥ parataraṃ nānyatkiñcidasti dhanañjaya .\nmayi sarvamidaṃ protaṃ sūtre maṇigaṇā iva ||7-7||",
+    "tej": {
+      "ht": "।।7.7।। हे धनंजय ! मुझसे श्रेष्ठ (परे) अन्य किचिन्मात्र वस्तु नहीं है। यह सम्पूर्ण जगत् सूत्र में मणियों के सदृश मुझमें पिरोया हुआ है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।7.7।। हे धनञ्जय ! मेरे बढ़कर (इस जगत् का) दूसरा कोई किञ्चिन्मात्र भी कारण नहीं है। जैसे सूतकी मणियाँ सूतके धागेमें पिरोयी हुई होती हैं, ऐसे ही यह सम्पूर्ण जगत् मेरेमें ही ओत-प्रोत है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "7.7 There is nothing whatsoever higher than Me, O Arjuna. All this is strung on Me, as clusters of gems on a string.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "7.7 O Arjuna! There is nothing higher than Me; all is strung upon Me as rows of pearls upon a thread.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG7.19",
+    "chapter": 7,
+    "verse": 19,
+    "slok": "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते |\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः ||७-१९||",
+    "transliteration": "bahūnāṃ janmanāmante jñānavānmāṃ prapadyate .\nvāsudevaḥ sarvamiti sa mahātmā sudurlabhaḥ ||7-19||",
+    "tej": {
+      "ht": "।।7.19।। बहुत जन्मों के अन्त में (किसी एक जन्म विशेष में) ज्ञान को प्राप्त होकर कि 'यह सब वासुदेव है' ज्ञानी भक्त मुझे प्राप्त होता है; ऐसा महात्मा अति दुर्लभ है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।7.19।। बहुत जन्मोंके अन्तमें अर्थात् मनुष्यजन्ममें 'सब कुछ परमात्मा ही है', ऐसा जो ज्ञानवान् मेरे शरण होता है, वह महात्मा अत्यन्त दुर्लभ है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "7.19 At the end of many births the wise man comes to Me, realising that all this is Vaasudeva (the innermost Self); such a great soul (Mahatma) is very hard to find.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "7.19 After many lives, at last the wise man realises Me as I am. A man so enlightened that he sees God everywhere is very difficult to find.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG8.7",
+    "chapter": 8,
+    "verse": 7,
+    "slok": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च |\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयः (orसंशयम्) ||८-७||",
+    "transliteration": "tasmātsarveṣu kāleṣu māmanusmara yudhya ca .\nmayyarpitamanobuddhirmāmevaiṣyasyasaṃśayaḥ ||8-7||",
+    "tej": {
+      "ht": "।।8.7।। इसलिए, तुम सब काल में मेरा निरन्तर स्मरण करो; और युद्ध करो मुझमें अर्पण किये मन, बुद्धि से युक्त हुए निःसन्देह तुम मुझे ही प्राप्त होओगे।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।8.7।। इसलिये तू सब समयमें मेरा स्मरण कर और युद्ध भी कर। मेरेमें मन और बुद्धि अर्पित करनेवाला तू निःसन्देह मेरेको ही प्राप्त होगा।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "8.7 Therefore at all times remember Me only and fight. With mind and intellect fixed (or absorbed) in Me, thou shalt doubtessly come to Me alone.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "8.7 Therefore meditate always on Me, and fight; if thy mind and thy reason be fixed on Me, to Me shalt thou surely come.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG8.14",
+    "chapter": 8,
+    "verse": 14,
+    "slok": "अनन्यचेताः सततं यो मां स्मरति नित्यशः |\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ||८-१४||",
+    "transliteration": "ananyacetāḥ satataṃ yo māṃ smarati nityaśaḥ .\ntasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ ||8-14||",
+    "tej": {
+      "ht": "।।8.14।। हे पार्थ ! जो अनन्यचित्त वाला पुरुष मेरा स्मरण करता है, उस नित्ययुक्त योगी के लिए मैं सुलभ हूँ अर्थात् सहज ही प्राप्त हो जाता हूँ।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।8.14।।हे पृथानन्दन ! अनन्यचित्तवाला जो मनुष्य मेरा नित्य-निरन्तर स्मरण करता है, उस नित्ययुक्त योगीके लिये मैं सुलभ हूँ अर्थात् उसको सुलभतासे प्राप्त हो जाता हूँ।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "8.14 I am easily attainable by that ever-steadfast Yogi who constantly and daily remembers Me (for a long time), not thinking of anything else (with a single mind or one-pointed mind), O Partha (Arjuna).",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "8.14 To him who thinks constantly of Me, and of nothing else, to such an ever-faithful devotee, O Arjuna, am I ever accessible.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
     "_id": "BG9.22",
     "chapter": 9,
     "verse": 22,
@@ -204,6 +388,52 @@
     "rams": {
       "ht": "।।9.22।। जो अनन्य भक्त मेरा चिन्तन करते हुए मेरी उपासना करते हैं, मेरेमें निरन्तर लगे हुए उन भक्तोंका योगक्षेम (अप्राप्तकी प्राप्ति और प्राप्तकी रक्षा) मैं वहन करता हूँ।",
       "author": "Swami Ramsukhdas"
+    }
+  },
+  {
+    "_id": "BG10.20",
+    "chapter": 10,
+    "verse": 20,
+    "slok": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः |\nअहमादिश्च मध्यं च भूतानामन्त एव च ||१०-२०||",
+    "transliteration": "ahamātmā guḍākeśa sarvabhūtāśayasthitaḥ .\nahamādiśca madhyaṃ ca bhūtānāmanta eva ca ||10-20||",
+    "tej": {
+      "ht": "।।10.20।। हे गुडाकेश (निद्राजित्) ! मैं समस्त भूतों के हृदय में स्थित सबकी आत्मा हूँ तथा सम्पूर्ण भूतों का आदि, मध्य और अन्त भी मैं ही हूँ।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।10.20।। हे नींदको जीतनेवाले अर्जुन ! सम्पूर्ण प्राणियोंके आदि, मध्य तथा अन्तमें भी मैं ही हूँ और प्राणियोंके अन्तःकरणमें आत्मरूपसे भी मैं ही स्थित हूँ।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "10.20 I am the Self, O Gudakesa, seated in the hearts of all beings; I am the beginning, the middle and also the end of all beings.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "10.20 O Arjuna! I am the Self, seated in the hearts of all beings; I am the beginning and the life, and I am the end of them all.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG10.41",
+    "chapter": 10,
+    "verse": 41,
+    "slok": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा |\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम् ||१०-४१||",
+    "transliteration": "yadyadvibhūtimatsattvaṃ śrīmadūrjitameva vā .\ntattadevāvagaccha tvaṃ mama tejoṃśasambhavam ||10-41||",
+    "tej": {
+      "ht": "।।10.41।। जो कोई भी विभूतियुक्त, कान्तियुक्त अथवा शक्तियुक्त वस्तु (या प्राणी) है, उसको तुम मेरे तेज के अंश से ही उत्पन्न हुई जानो।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।10.41।। जो-जो ऐश्वर्ययुक्त, शोभायुक्त और बलयुक्त प्राणी तथा वस्तु है, उस-उसको तुम मेरे ही तेज-(योग-) के अंशसे उत्पन्न हुई समझो।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "10.41 Whatever being there is glorious, prosperous or powerful, that know thou to be a manifestation of a part of My splendour.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "10.41 Whatever is glorious, excellent, beautiful and mighty, be assured that it comes from a fragment of My splendour.",
+      "author": "Shri Purohit Swami"
     }
   },
   {
@@ -253,6 +483,98 @@
     }
   },
   {
+    "_id": "BG13.28",
+    "chapter": 13,
+    "verse": 28,
+    "slok": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् |\nविनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति ||१३-२८||",
+    "transliteration": "samaṃ sarveṣu bhūteṣu tiṣṭhantaṃ parameśvaram .\nvinaśyatsvavinaśyantaṃ yaḥ paśyati sa paśyati ||13-28||",
+    "tej": {
+      "ht": "।।13.28।। जो पुरुष समस्त नश्वर भूतों में अनश्वर परमेश्वर को समभाव से स्थित देखता है, वही (वास्तव में) देखता है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।13.28।।जो नष्ट होते हुए सम्पूर्ण प्राणियोंमें परमात्माको नाशरहित और समरूपसे स्थित देखता है, वही वास्तवमें सही देखता है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "13.28 He sees, who sees the Supreme Lord, existing eally in all beings, the unperishing within the perishing.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "13.28 He who can see the Supreme Lord in all beings, the Imperishable amidst the perishable, he it is who really sees.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG13.34",
+    "chapter": 13,
+    "verse": 34,
+    "slok": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः |\nक्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ||१३-३४||",
+    "transliteration": "yathā prakāśayatyekaḥ kṛtsnaṃ lokamimaṃ raviḥ .\nkṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata ||13-34||",
+    "tej": {
+      "ht": "।।13.34।। हे भारत ! जिस प्रकार एक ही सूर्य इस सम्पूर्ण लोक को प्रकाशित करता है, उसी प्रकार एक ही क्षेत्री (क्षेत्रज्ञ) सम्पूर्ण क्षेत्र को प्रकाशित करता है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।13.34।।हे भरतवंशोद्भव अर्जुन ! जैसे एक ही सूर्य सम्पूर्ण संसारको प्रकाशित करता है, ऐसे ही क्षेत्री (क्षेत्रज्ञ, आत्मा) सम्पूर्ण क्षेत्रको प्रकाशित करता है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "13.34 Just as the one sun illumines the whole world, so also the Lord of the field (Supreme Self) \nillumines the whole field, O Arjuna.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "13.34 As the one Sun illuminates the whole earth, so the Lord illumines the whole universe.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG14.5",
+    "chapter": 14,
+    "verse": 5,
+    "slok": "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः |\nनिबध्नन्ति महाबाहो देहे देहिनमव्ययम् ||१४-५||",
+    "transliteration": "sattvaṃ rajastama iti guṇāḥ prakṛtisambhavāḥ .\nnibadhnanti mahābāho dehe dehinamavyayam ||14-5||",
+    "tej": {
+      "ht": "।।14.5।। हे महाबाहो ! सत्त्व, रज और तम ये प्रकृति से उत्पन्न तीनों गुण देही आत्मा को देह के साथ बांध देते हैं।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।14.5।।हे महाबाहो ! प्रकृतिसे उत्पन्न होनेवाले सत्त्व, रज और तम -- ये तीनों गुण अविनाशी देहीको देहमें बाँध देते हैं।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "14.5 Purity, passion and inertia  these alities, O Arjuna, born of Nature, bind fast in the body, the embodied, the indestructible.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "14.5 Purity, Passion and Ignorance are the Qualities which the Law of nature bringeth forth. They fetter the free Spirit in all beings.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG14.26",
+    "chapter": 14,
+    "verse": 26,
+    "slok": "मां च योऽव्यभिचारेण भक्तियोगेन सेवते |\nस गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ||१४-२६||",
+    "transliteration": "māṃ ca yo.avyabhicāreṇa bhaktiyogena sevate .\nsa guṇānsamatītyaitānbrahmabhūyāya kalpate ||14-26||",
+    "tej": {
+      "ht": "।।14.26।। जो पुरुष अव्यभिचारी भक्तियोग के द्वारा मेरी सेवा अर्थात् उपासना करता है, वह इन तीनों गुणों के अतीत होकर ब्रह्म बनने के लिये योग्य हो जाता है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।14.26।।जो मनुष्य अव्यभिचारी भक्तियोगके द्वारा मेरा सेवन करता है, वह इन गुणोंका अतिक्रमण करके ब्रह्मप्राप्तिका पात्र हो जाता है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "14.26 And he who serves Me with unswerving devotion, he, crossing beyond the alities, is fit for becoming Brahman.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "14.26 And he who serves Me and only Me, with unfaltering devotion, shall overcome the Qualities, and become One with the Eternal.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
     "_id": "BG15.15",
     "chapter": 15,
     "verse": 15,
@@ -273,6 +595,98 @@
     "rams": {
       "ht": "।।15.15।।मैं सम्पूर्ण प्राणियोंके हृदयमें स्थित हूँ। मेरेसे ही स्मृति, ज्ञान और अपोहन (संशय आदि दोषोंका नाश) होता है। सम्पूर्ण वेदोंके द्वारा मैं ही जाननेयोग्य हूँ। वेदोंके तत्त्वका निर्णय करनेवाला और वेदोंको जाननेवाला भी मैं ही हूँ।",
       "author": "Swami Ramsukhdas"
+    }
+  },
+  {
+    "_id": "BG16.1",
+    "chapter": 16,
+    "verse": 1,
+    "slok": "श्रीभगवानुवाच |\nअभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः |\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ||१६-१||",
+    "transliteration": "śrībhagavānuvāca .\nabhayaṃ sattvasaṃśuddhirjñānayogavyavasthitiḥ .\ndānaṃ damaśca yajñaśca svādhyāyastapa ārjavam ||16-1||",
+    "tej": {
+      "ht": "।।16.1।। श्री भगवान् ने कहा -- अभय, अन्त:करण की शुद्धि, ज्ञानयोग में दृढ़ स्थिति, दान, दम, यज्ञ, स्वाध्याय, तप और आर्जव।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।16.1।।श्रीभगवान् बोले -- भयका सर्वथा अभाव; अन्तःकरणकी शुद्धि; ज्ञानके लिये योगमें दृढ़ स्थिति; सात्त्विक दान; इन्द्रियोंका दमन; यज्ञ; स्वाध्याय; कर्तव्य-पालनके लिये कष्ट सहना; शरीर-मन-वाणीकी सरलता।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "16.1 The Blessed Lord said  Fearlessness, purity of heart, steadfastness in knowledge and Yoga, almsgiving, control of the senses, sacrifice, study of scriptures, austerity and straightforwardness.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "16.1 \"Lord Shri Krishna continued: Fearlessness, clean living, unceasing concentration on wisdom, readiness to give, self-control, a spirit of sacrifice, regular study of the scriptures, austerities, candour,",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG16.24",
+    "chapter": 16,
+    "verse": 24,
+    "slok": "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ |\nज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ||१६-२४||",
+    "transliteration": "tasmācchāstraṃ pramāṇaṃ te kāryākāryavyavasthitau .\njñātvā śāstravidhānoktaṃ karma kartumihārhasi ||16-24||",
+    "tej": {
+      "ht": "।।16.24।। इसलिए तुम्हारे लिए कर्तव्य और अकर्तव्य की व्यवस्था (निर्णय) में शास्त्र ही प्रमाण है शास्त्रोक्त विधान को जानकर तुम्हें अपने कर्म करने चाहिए।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।16.24।।अतः तेरे लिये कर्तव्य-अकर्तव्यकी व्यवस्थामें शास्त्र ही प्रमाण है -- ऐसा जानकर तू इस लोकमें शास्त्र-विधिसे नियत कर्तव्य कर्म करनेयोग्य है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "16.24 Therefore, let the scripture be thy authority in determining what ought to be done and what ought not to be done. Having known what is said in the ordinance of the scriptures, thou shouldst act here in this world.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "16.24 Therefore whenever there is doubt whether thou shouldst do a thing or not, let the scriptures guide thy conduct. In the light of the scriptures shouldst thou labour the whole of thy life.\"",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG17.3",
+    "chapter": 17,
+    "verse": 3,
+    "slok": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत |\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ||१७-३||",
+    "transliteration": "sattvānurūpā sarvasya śraddhā bhavati bhārata .\nśraddhāmayo.ayaṃ puruṣo yo yacchraddhaḥ sa eva saḥ ||17-3||",
+    "tej": {
+      "ht": "।।17.3।। हे भारत सभी मनुष्यों की श्रद्धा उनके सत्त्व (स्वभाव, संस्कार) के अनुरूप होती है। यह पुरुष श्रद्धामय है, इसलिए जो पुरुष जिस श्रद्धा वाला है वह स्वयं भी वही है अर्थात् जैसी जिसकी श्रद्धा वैसा ही उसका स्वरूप होता है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।17.3।।हे भारत ! सभी मनुष्योंकी श्रद्धा अन्तःकरणके अनुरूप होती है। यह मनुष्य श्रद्धामय है। इसलिये जो जैसी श्रद्धावाला है, वही उसका स्वरूप है अर्थात् वही उसकी निष्ठा -- स्थिति है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "17.3 The faith of each is in accordance with his nature, O Arjuna. The man consists of his faith; as a man's faith is, so is he.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "17.3 The faith of every man conforms to his nature. By nature he is full of faith. He is in fact what his faith makes him.",
+      "author": "Shri Purohit Swami"
+    }
+  },
+  {
+    "_id": "BG17.26",
+    "chapter": 17,
+    "verse": 26,
+    "slok": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते |\nप्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते ||१७-२६||",
+    "transliteration": "sadbhāve sādhubhāve ca sadityetatprayujyate .\npraśaste karmaṇi tathā sacchabdaḥ pārtha yujyate ||17-26||",
+    "tej": {
+      "ht": "।।17.26।। हे पार्थ ! सत्य भाव व साधुभाव में 'सत्' शब्द का प्रयोग किया जाता है, और प्रशस्त (श्रेष्ठ, शुभ) कर्म में 'सत्' शब्द प्रयुक्त होता है।।",
+      "author": "Swami Tejomayananda"
+    },
+    "rams": {
+      "ht": "।।17.26।।हे पार्थ ! परमात्माके 'सत्'--इस  नामका सत्तामात्रमें और श्रेष्ठ भावमें प्रयोग किया जाता है तथा प्रशंसनीय कर्मके साथ 'सत्' शब्द जोड़ा जाता है।",
+      "author": "Swami Ramsukhdas"
+    },
+    "siva": {
+      "et": "17.26 The word ï1Satï1 is used in the sense of reality and of goodness; and so also, O Arjuna, the word ï1Satï1 is used in the sense of an auspicious act.",
+      "author": "Swami Sivananda"
+    },
+    "purohit": {
+      "et": "17.26 Sat' means Reality or the highest Good, and also, O Arjuna, it is used to mean an action of exceptional merit.",
+      "author": "Shri Purohit Swami"
     }
   },
   {
