@@ -3,26 +3,28 @@
 ## v2.1 — Performance, Images & Core Features
 
 ### Performance
-- [ ] Convert all background images to WebP format (#7)
-  - bg1-bg6.jpg → WebP (target: max 200KB each)
-  - Replace `background.png` (5.3MB) with `background.webp` (309KB)
-  - Update `config.json` references
+- [x] Convert all background images to WebP format (#7) ✅
+  - ~~bg1-bg6.jpg → WebP (target: max 200KB each)~~ Done: bg1-bg6.webp (148–246KB each)
+  - ~~Replace `background.png` (5.3MB) with `background.webp` (309KB)~~ Done: background.webp (316KB)
+  - ~~Update `config.json` references~~ Done: all references point to .webp
 - [ ] Lazy-load non-critical resources (#8)
   - Preload only the first random background
   - Use `requestIdleCallback` for magic rain / sparkle setup
   - Defer audio init until user interaction
   - Inline critical CSS
 - [ ] Complete CSP compliance — remove `unsafe-inline` (#9)
-  - Convert newtab.js inline styles to CSS classes
-  - Convert magicRain.js inline styles to CSS classes
+  - Convert newtab.js inline styles to CSS classes (68 inline style usages remain)
+  - Convert magicRain.js inline styles to CSS classes (10 inline style usages remain)
   - Remove `'unsafe-inline'` from manifest.json
   - **Approach:** For each component: identify inline styles → create CSS classes in style.css → replace `style.x = y` with `classList.add/remove` → test → finally remove `unsafe-inline`
 
 ### API Reliability
-- [ ] Reduce dependency on third-party Bhagavad Gita API (#27)
-  - Bundle local JSON with ~50-100 popular verses as offline fallback
-  - Increase quote cache expiry from 24h to 7 days
-  - Add API health check on startup — silently fall back to cached/bundled data
+- [~] Reduce dependency on third-party Bhagavad Gita API (#27) — **Partially Done**
+  - [x] Bundle local JSON as offline fallback — Done: `fallback-verses.json` exists (13 verses; expand to 50-100)
+  - [x] Increase quote cache expiry from 24h to 7 days — Done: `cache.expiry` = 604,800,000ms
+  - [x] Add fallback logic — Done: newtab.js falls back to cached/bundled data when API fails
+  - [ ] Add API health check on startup — silently fall back to cached/bundled data
+  - [ ] Expand `fallback-verses.json` from 13 to 50-100 popular verses
   - **Medium-term:** Mirror API data in own GitHub Pages as backup
   - **Long-term:** Self-host all 700 verses, remove runtime API dependency
 
@@ -87,6 +89,14 @@
 ---
 
 ## Completed
+
+### v2.1 (partial)
+- [x] Converted all background images to WebP format (#7)
+  - bg1-bg6.webp, background.webp — all config.json and style.css refs updated
+- [x] Bundled offline fallback verses (`fallback-verses.json`) (#27 partial)
+- [x] Increased cache expiry to 7 days (#27 partial)
+- [x] Added API fallback logic in newtab.js — uses cached/bundled verses when API fails (#27 partial)
+- [x] Created full v2.1/v2.2/v3.0 roadmap with GitHub issue links in TODO.md
 
 ### v2.0.3
 - [x] Fixed promo handler to properly show/hide extension promo
