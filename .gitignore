@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.zip
+*.crx
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug
+*.log
