@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.2.1] - Repo/store version reconciliation
+- The published Web Store build was 2.2.0 while this repo was still tagged 2.0.3, though the code was **identical**. Advancing the repo to 2.2.1 so git is once again the source of truth and future releases publish cleanly.
+- NOTE: audio (background music + rain) still loads from remote third-party URLs (saavncdn/mixkit) and is the cause of the reported "sound not working" issue. A local-audio fix is pending licensed audio assets — see extension-ops KB §3.1. This release does NOT yet fix audio.
+
 All notable changes to the Geeta Quote Daily Chrome Extension will be documented in this file.
 
 ## [2.0.3] - 2024-03-20
