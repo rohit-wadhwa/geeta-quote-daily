@@ -48,11 +48,11 @@ const CONFIG = {
     // Audio Configuration
     audio: {
         backgroundMusic: {
-            url: 'https://aac.saavncdn.com/100/098c92cfdc25fa1373be9f572b72ea90_320.mp4',
+            url: 'audio/background-music.mp3',
             volume: 0.5
         },
         rainSound: {
-            url: 'https://assets.mixkit.co/active_storage/sfx/1253/1253-preview.mp3',
+            url: 'audio/rain-sound.mp3',
             volume: 0.3
         }
     },
