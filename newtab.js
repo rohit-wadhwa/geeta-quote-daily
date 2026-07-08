@@ -61,16 +61,8 @@ function initializeElements() {
     // Graceful audio fallback: if an audio file can't load/play, hide its control
     // instead of leaving a dead button (music is optional; quote + visuals still work).
     const disableMusicUI = () => { if (elements.musicToggleButton) elements.musicToggleButton.style.display = 'none'; };
-    const disableRainSoundUI = () => {
-        const label = elements.rainSoundCheckbox && elements.rainSoundCheckbox.closest('.rain-sound-toggle');
-        if (label) label.style.display = 'none';
-        else if (elements.rainSoundCheckbox) elements.rainSoundCheckbox.style.display = 'none';
-        if (elements.rainVolumeContainer) elements.rainVolumeContainer.style.display = 'none';
-    };
     elements.disableMusicUI = disableMusicUI;
-    elements.disableRainSoundUI = disableRainSoundUI;
     if (elements.backgroundMusic) elements.backgroundMusic.addEventListener('error', disableMusicUI, { once: true });
-    if (elements.rainSound) elements.rainSound.addEventListener('error', disableRainSoundUI, { once: true });
     
     // Create rain volume slider container
     elements.rainVolumeContainer = document.createElement('div');
@@ -894,7 +886,7 @@ const magicRain = {
             if (elements.rainSound) {
                 elements.rainSound.currentTime = 0;
                 elements.rainSound.play().catch(error => {
-                    console.warn('Rain sound unavailable:', error); if (elements.disableRainSoundUI) elements.disableRainSoundUI();
+                    console.warn('Rain sound unavailable:', error);
                 });
             }
         }
@@ -1175,7 +1167,7 @@ const eventHandlers = {
             if (magicRain.state.isActive) {
                 elements.rainSound.currentTime = 0;
                 elements.rainSound.play().catch(error => {
-                    console.warn('Rain sound unavailable:', error); if (elements.disableRainSoundUI) elements.disableRainSoundUI();
+                    console.warn('Rain sound unavailable:', error);
                 });
             }
         } else {
