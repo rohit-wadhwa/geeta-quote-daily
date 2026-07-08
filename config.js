@@ -52,7 +52,7 @@ const CONFIG = {
             volume: 0.5
         },
         rainSound: {
-            url: 'audio/rain-sound.mp3',
+            url: 'https://assets.mixkit.co/active_storage/sfx/1253/1253-preview.mp3',
             volume: 0.3
         }
     },

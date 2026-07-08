@@ -54,7 +54,7 @@ function initializeElements() {
     document.body.appendChild(elements.magicRainContainer);
     
     // Create rain sound audio element
-    elements.rainSound = new Audio('audio/rain-sound.mp3');
+    elements.rainSound = new Audio('https://assets.mixkit.co/active_storage/sfx/1253/1253-preview.mp3');
     elements.rainSound.loop = true;
     elements.rainSound.volume = 0.3;
 

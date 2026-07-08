@@ -1,12 +1,12 @@
-# audio/ — add the two local audio files here
+# audio/ — add ONE local audio file here
 
-Drop these two files in this folder, then the sound works again (extension **and** the Vercel site):
+Only the **background music** needs to be local. Add:
 
-- **background-music.mp3** — the background instrumental (Krishna flute / calm instrumental).
-  ⚠️ MUST be royalty-free or licensed to you. Do **not** reuse the old JioSaavn/saavncdn track — it's copyrighted (there was a "Listen on Saavn" link to it).
-- **rain-sound.mp3** — a royalty-free rain/ambient loop.
+- **background-music.mp3** — a calm instrumental (e.g. flute). MUST be royalty-free or licensed to you for redistribution. Do NOT reuse the old JioSaavn/saavncdn track (copyrighted).
 
-## Why this change
-The old build streamed audio from `aac.saavncdn.com` (a copyrighted JioSaavn song) and `assets.mixkit.co`. Those remote URLs are the cause of the "sound not working" reports — they rotate/expire, and the saavncdn track is a licensing risk. Serving local files fixes both the Chrome extension and https://geeta-quote-daily.vercel.app, and lets us drop the external host permissions.
+The **rain sound** is unchanged — it still streams from its working Mixkit URL, so no file is needed for it.
 
-Free sources for replacements: Pixabay Music, Mixkit (download the file, don't hotlink), Free Music Archive, YouTube Audio Library.
+## Why
+The background music used to stream from `aac.saavncdn.com` (a copyrighted JioSaavn song) and stopped working. Serving the music from a local royalty-free file fixes it and removes the saavncdn host permission. The rain sound (Mixkit) was working and is left as-is.
+
+Free sources: Pixabay Music, YouTube Audio Library, Mixkit, Free Music Archive.

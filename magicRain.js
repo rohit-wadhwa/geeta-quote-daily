@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create audio only when needed
         const createAudio = () => {
             if (!audio) {
-                audio = new Audio('audio/rain-sound.mp3');
+                audio = new Audio('https://assets.mixkit.co/active_storage/sfx/1253/1253-preview.mp3');
                 audio.loop = true;
                 audio.volume = 0.3;
                 // Prevent memory leaks by setting src to empty on page unload
