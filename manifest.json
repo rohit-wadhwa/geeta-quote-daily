@@ -11,10 +11,11 @@
   ],
   "host_permissions": [
     "https://assets.mixkit.co/*",
-    "https://vedicscriptures.github.io/*"
+    "https://vedicscriptures.github.io/*",
+    "https://raw.githubusercontent.com/*"
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' https://assets.mixkit.co; img-src 'self' https://img.buymeacoffee.com; style-src 'self' 'unsafe-inline';"
+    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' https://assets.mixkit.co https://raw.githubusercontent.com; img-src 'self' https://img.buymeacoffee.com; style-src 'self' 'unsafe-inline';"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"

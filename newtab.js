@@ -63,6 +63,39 @@ function initializeElements() {
     const disableMusicUI = () => { if (elements.musicToggleButton) elements.musicToggleButton.style.display = 'none'; };
     elements.disableMusicUI = disableMusicUI;
     if (elements.backgroundMusic) elements.backgroundMusic.addEventListener('error', disableMusicUI, { once: true });
+
+    // Multi-track music: default bundled locally, extra tracks streamed from GitHub raw.
+    const MUSIC_TRACKS = [
+        { id: 'flute', name: 'Krishna Flute', url: 'audio/background-music.mp3' },
+        { id: 'hare-krishna', name: 'Hare Krishna Theme', url: 'https://raw.githubusercontent.com/rohit-wadhwa/geeta-quote-daily/main/audio/track-hare-krishna.mp3' }
+    ];
+    elements.musicTrackSelect = document.getElementById('music-track');
+    const applyMusicTrack = (id, autoplay) => {
+        const t = MUSIC_TRACKS.find(x => x.id === id) || MUSIC_TRACKS[0];
+        if (!elements.backgroundMusic) return;
+        const wasPlaying = !elements.backgroundMusic.paused;
+        elements.backgroundMusic.src = t.url;
+        try { elements.backgroundMusic.load(); } catch (e) {}
+        try { localStorage.setItem('geetaMusicTrack', t.id); } catch (e) {}
+        if (autoplay || wasPlaying) {
+            elements.backgroundMusic.play().then(() => {
+                if (elements.musicToggleButton) elements.musicToggleButton.textContent = '🔇 Stop Music';
+            }).catch(() => { if (elements.disableMusicUI) elements.disableMusicUI(); });
+        }
+    };
+    if (elements.musicTrackSelect) {
+        MUSIC_TRACKS.forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t.id; opt.textContent = t.name;
+            elements.musicTrackSelect.appendChild(opt);
+        });
+        let saved = null;
+        try { saved = localStorage.getItem('geetaMusicTrack'); } catch (e) {}
+        const initial = (saved && MUSIC_TRACKS.some(t => t.id === saved)) ? saved : MUSIC_TRACKS[0].id;
+        elements.musicTrackSelect.value = initial;
+        applyMusicTrack(initial, false);
+        elements.musicTrackSelect.addEventListener('change', () => applyMusicTrack(elements.musicTrackSelect.value, true));
+    }
     
     // Create rain volume slider container
     elements.rainVolumeContainer = document.createElement('div');
