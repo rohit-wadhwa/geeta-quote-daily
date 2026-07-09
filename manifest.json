@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Geeta Quote Daily",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Get daily wisdom from Bhagavad Gita with beautiful visuals and soothing music.",
   "author": "Rohit Wadhwa",
   "homepage_url": "https://in.linkedin.com/in/rohit-wadhwa",
@@ -10,12 +10,12 @@
     "alarms"
   ],
   "host_permissions": [
+    "https://assets.mixkit.co/*",
     "https://vedicscriptures.github.io/*",
-    "https://*.saavncdn.com/*",
-    "https://assets.mixkit.co/*"
+    "https://raw.githubusercontent.com/*"
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' https://*.saavncdn.com https://assets.mixkit.co; img-src 'self' https://*.saavncdn.com https://assets.mixkit.co https://img.buymeacoffee.com; style-src 'self' 'unsafe-inline';"
+    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' https://assets.mixkit.co https://raw.githubusercontent.com; img-src 'self' https://img.buymeacoffee.com; style-src 'self' 'unsafe-inline';"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
@@ -36,14 +36,18 @@
     },
     "default_title": "Geeta Quote Daily"
   },
-  "web_accessible_resources": [{
-    "resources": [
-      "images/*",
-      "*.css",
-      "*.js",
-      "fallback-verses.json"
-    ],
-    "matches": ["<all_urls>"]
-  }],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/*",
+        "*.css",
+        "*.js",
+        "fallback-verses.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
   "minimum_chrome_version": "88"
 }
