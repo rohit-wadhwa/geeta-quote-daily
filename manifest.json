@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Geeta Quote Daily",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Get daily wisdom from Bhagavad Gita with beautiful visuals and soothing music.",
   "author": "Rohit Wadhwa",
   "homepage_url": "https://in.linkedin.com/in/rohit-wadhwa",
@@ -11,11 +11,10 @@
   ],
   "host_permissions": [
     "https://assets.mixkit.co/*",
-    "https://vedicscriptures.github.io/*",
-    "https://raw.githubusercontent.com/*"
+    "https://vedicscriptures.github.io/*"
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' https://assets.mixkit.co https://raw.githubusercontent.com; img-src 'self' https://img.buymeacoffee.com; style-src 'self' 'unsafe-inline';"
+    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' https://assets.mixkit.co; img-src 'self' https://img.buymeacoffee.com; style-src 'self' 'unsafe-inline';"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
