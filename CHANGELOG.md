@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.3.1] - Music reliability + UI fixes
+- **Fixed "Play Music" not playing**: both tracks are now served locally (bundled) instead of streaming the 2nd track from GitHub raw, which was unreliable. Removed the `raw.githubusercontent.com` host permission (so no extra privacy justification needed).
+- Music button label now tracks the audio's real play/pause state (no more stuck "Play Music" while it buffers).
+- Restyled the track-selector dropdown to match the control buttons (was a plain dark box).
+- Copyright year in the footer is now dynamic (© 2024–current year).
+
 ## [2.2.1] - Repo/store version reconciliation
 - The published Web Store build was 2.2.0 while this repo was still tagged 2.0.3, though the code was **identical**. Advancing the repo to 2.2.1 so git is once again the source of truth and future releases publish cleanly.
 - NOTE: audio (background music + rain) still loads from remote third-party URLs (saavncdn/mixkit) and is the cause of the reported "sound not working" issue. A local-audio fix is pending licensed audio assets — see extension-ops KB §3.1. This release does NOT yet fix audio.

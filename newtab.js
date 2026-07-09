@@ -64,10 +64,24 @@ function initializeElements() {
     elements.disableMusicUI = disableMusicUI;
     if (elements.backgroundMusic) elements.backgroundMusic.addEventListener('error', disableMusicUI, { once: true });
 
+    // Keep the music button label in sync with actual playback state (robust vs. play() promise timing)
+    if (elements.backgroundMusic) {
+        elements.backgroundMusic.addEventListener('play', () => { if (elements.musicToggleButton) elements.musicToggleButton.textContent = '🔇 Stop Music'; });
+        elements.backgroundMusic.addEventListener('pause', () => { if (elements.musicToggleButton) elements.musicToggleButton.textContent = '🔊 Play Music'; });
+        elements.backgroundMusic.addEventListener('ended', () => { if (elements.musicToggleButton) elements.musicToggleButton.textContent = '🔊 Play Music'; });
+    }
+
+    // Dynamic copyright year
+    try {
+        const cy = new Date().getFullYear();
+        const cp = document.getElementById('copyright');
+        if (cp) cp.textContent = '© 2024' + (cy > 2024 ? '–' + cy : '') + ' Geeta Quote Daily. All rights reserved.';
+    } catch (e) {}
+
     // Multi-track music: default bundled locally, extra tracks streamed from GitHub raw.
     const MUSIC_TRACKS = [
         { id: 'flute', name: 'Krishna Flute', url: 'audio/background-music.mp3' },
-        { id: 'hare-krishna', name: 'Hare Krishna Theme', url: 'https://raw.githubusercontent.com/rohit-wadhwa/geeta-quote-daily/main/audio/track-hare-krishna.mp3' }
+        { id: 'hare-krishna', name: 'Hare Krishna Theme', url: 'audio/track-hare-krishna.mp3' }
     ];
     elements.musicTrackSelect = document.getElementById('music-track');
     const applyMusicTrack = (id, autoplay) => {

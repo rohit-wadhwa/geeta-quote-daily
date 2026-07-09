@@ -33,7 +33,6 @@ jobs:
             -x "*.git*" \
             -x "*.github*" \
             -x "node_modules/*" \
-            -x "audio/track-*.mp3" \
             -x "demo/*" \
             -x "newsletters/*" \
             -x "newsletters/**/*" \
