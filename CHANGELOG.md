@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.3.2] - Music button + playback fixes
+- **Fixed the music button disappearing** when you press Stop or switch tracks: the old "graceful fallback" hid the button on any play hiccup. It now stays put and just resets its label.
+- **Fixed no-audio**: removed a leftover `<source>` child that conflicted with the dynamically-set track URL (the media element wasn't fetching the file). Play now forces a `load()` when needed.
+
 ## [2.3.1] - Music reliability + UI fixes
 - **Fixed "Play Music" not playing**: both tracks are now served locally (bundled) instead of streaming the 2nd track from GitHub raw, which was unreliable. Removed the `raw.githubusercontent.com` host permission (so no extra privacy justification needed).
 - Music button label now tracks the audio's real play/pause state (no more stuck "Play Music" while it buffers).
