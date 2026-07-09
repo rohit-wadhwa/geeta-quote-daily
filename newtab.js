@@ -60,7 +60,7 @@ function initializeElements() {
 
     // Graceful audio fallback: if an audio file can't load/play, hide its control
     // instead of leaving a dead button (music is optional; quote + visuals still work).
-    const disableMusicUI = () => { if (elements.musicToggleButton) elements.musicToggleButton.style.display = 'none'; };
+    const disableMusicUI = () => { if (elements.musicToggleButton) elements.musicToggleButton.textContent = '🔊 Play Music'; }; // never hide; just reset label
     elements.disableMusicUI = disableMusicUI;
     if (elements.backgroundMusic) elements.backgroundMusic.addEventListener('error', disableMusicUI, { once: true });
 
@@ -1186,13 +1186,12 @@ const eventHandlers = {
     
     handleMusicToggle: () => {
         if (!elements.backgroundMusic) return;
-        if (elements.backgroundMusic.paused) {
-            elements.backgroundMusic.play().then(() => {
-                elements.musicToggleButton.textContent = '🔇 Stop Music';
-            }).catch(() => { if (elements.disableMusicUI) elements.disableMusicUI(); });
+        const a = elements.backgroundMusic;
+        if (a.paused) {
+            if (a.readyState < 2) { try { a.load(); } catch (e) {} }   // ensure the file actually fetches
+            a.play().catch(() => { if (elements.musicToggleButton) elements.musicToggleButton.textContent = '🔊 Play Music'; });
         } else {
-            elements.backgroundMusic.pause();
-            elements.musicToggleButton.textContent = '🔊 Play Music';
+            a.pause();
         }
     },
     
