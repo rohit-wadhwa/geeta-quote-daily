@@ -19,19 +19,32 @@ body, html {
     color: #fff;
     width: 90%;
     max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(18, 20, 32, 0.55); /* readable fallback when blur unsupported */
+    border: 1px solid rgba(255, 255, 255, 0.16);
     padding: 20px;
     border-radius: 15px;
     position: relative;
     z-index: 2;
     margin: 0 auto;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.22);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 90vh;
     overflow-y: auto;
+}
+
+/* Glass quote card [Chunk 1] — frosted glass, cross-browser.
+   Follows the Aave principles that port everywhere: real backdrop blur with the
+   -webkit- prefix (Safari/iOS) + standard prop (Chrome/Edge/Firefox), a rim-light
+   highlight for legibility, and an @supports guard so unsupported browsers keep a
+   readable solid fill instead of transparent glass. */
+@supports ((-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px))) {
+    .container {
+        background-color: rgba(18, 20, 32, 0.34);
+        -webkit-backdrop-filter: blur(18px) saturate(180%);
+        backdrop-filter: blur(18px) saturate(180%);
+    }
 }
 
 #quote {
