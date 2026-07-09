@@ -214,7 +214,9 @@ async function loadConfiguration() {
                     'images/bg3.webp',
                     'images/bg4.webp',
                     'images/bg5.webp',
-                    'images/bg6.webp'
+                    'images/bg6.webp',
+                    'images/bg7.webp',
+                    'images/bg8.webp'
                 ]
             },
             animation: {
