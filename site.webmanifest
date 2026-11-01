@@ -1,0 +1,16 @@
+{
+  "id": "/",
+  "name": "Geeta Quote Daily — Daily Wisdom from the Bhagavad Gita",
+  "short_name": "Geeta Quote",
+  "description": "A daily quote from the Bhagavad Gita, set against serene visuals and the sound of Krishna's flute.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0e1a24",
+  "theme_color": "#0e1a24",
+  "categories": ["lifestyle", "books"],
+  "icons": [
+    { "src": "images/pwa-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/pwa-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
